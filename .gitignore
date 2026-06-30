@@ -1,15 +1,14 @@
 # Personal data (user fills these)
-cv.md
-data/applications.md
+# cv.md — tracked on personal branch
 data/applications.db
-data/pipeline.md
-data/scan-history.tsv
+# data/pipeline.md — tracked on personal branch
+# data/scan-history.tsv — tracked on personal branch
 data/pdf-index.tsv
 data/parser-output/**/*.json
 !data/parser-output/.gitkeep
 !data/parser-output/**/.gitkeep
 data/cache/ats-companies/
-reports/*.md
+# reports/*.md — tracked on personal branch
 !reports/.gitkeep
 output/*
 !output/.gitkeep
@@ -39,9 +38,9 @@ writing-samples/*
 !writing-samples/README.md
 
 # User config and customization (never auto-updated)
-config/profile.yml
-portals.yml
-modes/_profile.md
+# config/profile.yml — tracked on personal branch
+# portals.yml — tracked on personal branch
+# modes/_profile.md — tracked on personal branch
 .update-dismissed
 .update-lock
 
