@@ -240,6 +240,19 @@ export function buildContentFilter(contentFilter) {
 //   - Partial ranges (min only or max only) work correctly via overlap logic
 // Uses null-safe checks (!= null, ??) to preserve 0 values correctly.
 
+// buildAgeFilter — drops jobs older than max_days if the provider supplies postedAt.
+// Conservative: if postedAt is absent the job always passes (many providers don't expose it).
+export function buildAgeFilter(ageFilter) {
+  if (!ageFilter) return () => true;
+  const maxDays = Number(ageFilter.max_days ?? 0);
+  if (!Number.isFinite(maxDays) || maxDays <= 0) return () => true;
+  const cutoffMs = maxDays * 24 * 60 * 60 * 1000;
+  return (job) => {
+    if (job.postedAt == null) return true; // no date → pass conservatively
+    return (Date.now() - job.postedAt) <= cutoffMs;
+  };
+}
+
 export function buildSalaryFilter(salaryFilter) {
   if (!salaryFilter) return () => true;
 
@@ -909,6 +922,7 @@ async function main() {
   const titleFilter = buildTitleFilter(config.title_filter);
   const locationFilter = buildLocationFilter(config.location_filter);
   const salaryFilter = buildSalaryFilter(config.salary_filter);
+  const ageFilter = buildAgeFilter(config.age_filter);
   const trustValidator = buildTrustValidator(config.trust_filter);
   const contentFilter = buildContentFilter(config.content_filter);
 
@@ -986,6 +1000,7 @@ async function main() {
   let totalFilteredTitle = 0;
   let totalFilteredLocation = 0;
   let totalFilteredSalary = 0;
+  let totalFilteredAge = 0;
   let totalFilteredContent = 0;
   let totalDupes = 0;
   const newOffers = [];
@@ -1033,6 +1048,10 @@ async function main() {
         }
         if (!salaryFilter(job.salary)) {
           totalFilteredSalary++;
+          continue;
+        }
+        if (!ageFilter(job)) {
+          totalFilteredAge++;
           continue;
         }
         if (!contentFilter(job.description)) {
@@ -1157,6 +1176,9 @@ async function main() {
   console.log(`Filtered by title:     ${totalFilteredTitle} removed`);
   console.log(`Filtered by location:  ${totalFilteredLocation} removed`);
   console.log(`Filtered by salary:   ${totalFilteredSalary} removed`);
+  if (config.age_filter?.max_days) {
+    console.log(`Filtered by age:       ${totalFilteredAge} removed (older than ${config.age_filter.max_days}d)`);
+  }
   console.log(`Filtered by content:  ${totalFilteredContent} removed`);
   if (Object.keys(windows).length > 0 || totalFilteredCooldown > 0) {
     console.log(`Filtered by cooldown:  ${totalFilteredCooldown} removed`);

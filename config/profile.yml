@@ -1,0 +1,78 @@
+# Career-Ops Profile Configuration
+# Prateek Verma — Software Development Engineer
+
+candidate:
+  full_name: "Prateek Verma"
+  email: "prateek.2001.verma@gmail.com"
+  phone: "+91 7877123418"
+  location: "Bangalore, India"
+  linkedin: "linkedin.com/in/prateek-verma"
+  github: "github.com/prateek-wayne"
+  portfolio_url: ""
+  photo: ""
+
+target_roles:
+  primary:
+    - "Software Development Engineer"
+    - "Full Stack Engineer"
+    - "Backend Engineer"
+    - "Frontend Engineer"
+    - "Platform Engineer"
+  archetypes:
+    - name: "Full Stack Engineer"
+      level: "Junior/Mid (0-4 yrs)"
+      fit: "primary"
+    - name: "Backend Engineer"
+      level: "Junior/Mid (0-4 yrs)"
+      fit: "primary"
+    - name: "Frontend Engineer"
+      level: "Junior/Mid (0-4 yrs)"
+      fit: "primary"
+    - name: "Platform / Developer Experience Engineer"
+      level: "Junior/Mid (0-4 yrs)"
+      fit: "secondary"
+
+narrative:
+  headline: "Full-stack SDE with 3+ years at Philips shipping production microservices, observability platforms, and open-source Backstage plugins"
+  exit_story: "Built and shipped end-to-end features across React.js, Spring Boot, and Node.js at Philips; architected observability infra; published open-source Backstage plugins adopted org-wide."
+  superpowers:
+    - "End-to-end full-stack delivery (React.js + Spring Boot + Node.js)"
+    - "Developer platform / internal tooling (Backstage, self-serve automation)"
+    - "Observability & distributed tracing (Prometheus, OpenTelemetry, Grafana)"
+    - "Cloud-native / Kubernetes deployments (AWS EKS, Helm, Docker)"
+    - "Open-source contributor (Backstage plugin on npm, JSONCrack production fix)"
+  proof_points:
+    - name: "Backstage Scaffold Insight Viewer Plugin"
+      url: "https://www.npmjs.com/package/backstage-plugin-scaffold-insight-viewer"
+      hero_metric: "Open-source npm plugin adopted org-wide at Philips"
+    - name: "PGN Network Onboarding Automation"
+      hero_metric: "95% reduction in onboarding effort across 1,000+ services"
+    - name: "Observability Platform"
+      hero_metric: "MTTD reduced from hours to minutes via OTel + Prometheus + Grafana"
+    - name: "API Optimization"
+      hero_metric: "15% latency reduction (400ms → 340ms) via caching + query optimization"
+    - name: "JSONCrack Open Source Fix"
+      url: "https://github.com/AykutSarac/jsoncrack.com"
+      hero_metric: "Resolved production crash affecting thousands of users (10K+ stars repo)"
+    - name: "Event-Driven Booking Platform"
+      url: "https://github.com/prateek-wayne"
+      hero_metric: "Microservices with Kafka, K8s, Helm — personal project"
+
+compensation:
+  target_range: "Open"
+  currency: "INR"
+  minimum: "Negotiable"
+  location_flexibility: "Open to relocation within India; open to remote"
+
+location:
+  country: "India"
+  city: "Bangalore"
+  timezone: "IST (UTC+5:30)"
+  visa_status: "Indian citizen — no visa required within India"
+
+cover_letter:
+  notice_period_days: 30
+  primary_domain: "enterprise software / developer platforms / healthcare tech"
+
+cv:
+  output_format: "html"
