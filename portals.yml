@@ -745,6 +745,22 @@ tracked_companies:
     notes: 'Observability stack — direct match'
     enabled: true
 
+  # ── Wells Fargo ──────────────────────────────────────────────────
+  # Custom Umbraco ATS — requires Playwright. Filter: India + Technology + software engineer.
+  - name: Wells Fargo
+    careers_url: https://www.wellsfargojobs.com/en/jobs/?q=software+engineer&country=India&team=Technology
+    scan_method: playwright
+    notes: 'India Technology division — Bangalore, Hyderabad, Chennai. Java/Spring Boot/Python roles.'
+    enabled: true
+
+  # ── eBay ─────────────────────────────────────────────────────────
+  # Phenom People ATS — requires Playwright. Bengaluru engineering hub.
+  - name: eBay
+    careers_url: https://jobs.ebayinc.com/us/en/bengaluru
+    scan_method: playwright
+    notes: 'Bengaluru engineering hub — full-stack, Java/Spring Boot/ReactJS roles.'
+    enabled: true
+
 
 # tracked_companies:
 #   # -- AI Labs & LLM providers --
