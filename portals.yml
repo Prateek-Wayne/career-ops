@@ -185,66 +185,70 @@ title_filter:
 # The scanner extracts title, URL, and company from results.
 
 search_queries:
+  # All search_queries disabled — scanning tracked_companies directly instead.
+  # Direct career pages are faster, real-time, and token-free via ATS APIs.
+  # Re-enable individual queries below if you want broad discovery later.
+
   # -- LinkedIn India --
   - name: LinkedIn — SDE India
     query: 'site:linkedin.com/jobs "Software Development Engineer" OR "SDE" Java OR "Spring Boot" OR "Node.js" Bangalore OR Hyderabad OR Gurugram OR Pune India'
-    enabled: true
+    enabled: false
 
   - name: LinkedIn — Full Stack India
     query: 'site:linkedin.com/jobs "Full Stack Engineer" OR "Full Stack Developer" React OR "Node.js" Bangalore OR Hyderabad OR Gurugram OR Pune India'
-    enabled: true
+    enabled: false
 
   - name: LinkedIn — Backend India
     query: 'site:linkedin.com/jobs "Backend Engineer" OR "Backend Developer" Java OR "Spring Boot" OR "Node.js" Bangalore OR Hyderabad OR Gurugram OR Pune India'
-    enabled: true
+    enabled: false
 
   - name: LinkedIn — Frontend India
     query: 'site:linkedin.com/jobs "Frontend Engineer" OR "Frontend Developer" "React.js" OR "React" Bangalore OR Hyderabad OR Gurugram India'
-    enabled: true
+    enabled: false
 
   - name: LinkedIn — Platform Engineer India
     query: 'site:linkedin.com/jobs "Platform Engineer" OR "Developer Experience" OR "DevEx" Kubernetes OR Backstage India Bangalore OR Hyderabad OR Gurugram'
-    enabled: true
+    enabled: false
 
   # -- Naukri India --
   - name: Naukri — SDE/Full Stack India
     query: 'site:naukri.com "Software Development Engineer" OR "Full Stack Developer" OR "Full Stack Engineer" Java OR React OR "Node.js" Bangalore OR Hyderabad OR Gurugram OR Pune 2-5 years'
-    enabled: true
+    enabled: false
 
   - name: Naukri — Backend Engineer India
     query: 'site:naukri.com "Backend Engineer" OR "Backend Developer" "Spring Boot" OR "Node.js" OR Java Bangalore OR Hyderabad OR Gurugram OR Pune 2-5 years'
-    enabled: true
+    enabled: false
 
   # -- Greenhouse / Lever MNCs with India offices --
   - name: Greenhouse — SDE India offices
     query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Software Engineer" OR "Full Stack" OR "Backend" India OR Bangalore OR Hyderabad Java OR "Spring Boot" OR "Node.js"'
-    enabled: true
+    enabled: false
 
   - name: Lever — SDE India offices
     query: 'site:jobs.lever.co "Software Engineer" OR "Full Stack" OR "Backend" India OR Bangalore OR Hyderabad Java OR "Node.js" OR React'
-    enabled: true
+    enabled: false
 
   # -- Ashby startups with India offices --
   - name: Ashby — SDE India
     query: 'site:jobs.ashbyhq.com "Software Engineer" OR "Full Stack" OR "Backend" India OR Bangalore OR Hyderabad'
-    enabled: true
+    enabled: false
 
   # -- India startup boards --
   - name: AngelList/Wellfound — India SDE
     query: 'site:wellfound.com "Software Engineer" OR "Full Stack" OR "Backend" India OR Bangalore OR Hyderabad "Java" OR "Node.js" OR "React"'
-    enabled: true
+    enabled: false
 
   - name: Cutshort — India SDE
     query: 'site:cutshort.io "Software Engineer" OR "Full Stack" OR "Backend" Bangalore OR Hyderabad OR Gurugram Java OR "Spring Boot" OR "Node.js" OR React'
-    enabled: true
+    enabled: false
 
   - name: YC Jobs — India SDE
     query: 'site:workatastartup.com "Software Engineer" OR "Full Stack" OR "Backend" India OR Bangalore OR Hyderabad'
-    enabled: true
+    enabled: false
 
   - name: HN Who's Hiring — India SDE
     query: 'site:news.ycombinator.com "Software Engineer" OR "Full Stack" OR "Backend" India OR Bangalore OR Hyderabad Java OR "Node.js" OR React'
-    enabled: true
+    enabled: false
 
 # (commented examples below)
 #   # -- Ashby --
@@ -761,6 +765,118 @@ tracked_companies:
     notes: 'Bengaluru engineering hub — full-stack, Java/Spring Boot/ReactJS roles.'
     enabled: true
 
+  # ── Visa ─────────────────────────────────────────────────────────
+  # Custom Visa careers page — Playwright required (no public ATS API).
+  - name: Visa
+    careers_url: https://www.visa.co.uk/en_gb/jobs/?categories=Software%20Development%2FEngineering&cities=Bangalore&cities=Mumbai&sortProperty=createdOn&sortOrder=DESC
+    scan_method: playwright
+    notes: 'Bangalore + Mumbai SDE roles, sorted by newest first.'
+    enabled: true
+
+  # ── Mastercard ───────────────────────────────────────────────────
+  # Workday ATS — zero-token API. India offices: Pune, Vadodara.
+  - name: Mastercard
+    careers_url: https://mastercard.wd1.myworkdayjobs.com/CorporateCareers
+    notes: 'Workday API — Pune + Vadodara India offices.'
+    enabled: true
+
+  # ── American Express ─────────────────────────────────────────────
+  # Eightfold AI ATS — no public API, Playwright required.
+  - name: American Express
+    careers_url: https://aexp.eightfold.ai/careers?location=india&Select%20Skills=Software%20Engineering&Select%20Skills=Node.js&Select%20Skills=Software%20Development&domain=aexp.com
+    scan_method: playwright
+    notes: 'Eightfold AI ATS — Gurgaon India hub.'
+    enabled: true
+
+  # ── Precisely ─────────────────────────────────────────────────────
+  # Custom static page — Playwright required.
+  - name: Precisely
+    careers_url: https://www.precisely.com/careers-and-culture/international-jobs
+    scan_method: playwright
+    notes: 'India engineering roles.'
+    enabled: true
+
+  # ── Optum (UnitedHealth Group) ───────────────────────────────────
+  # Custom Taleo ATS — Playwright required.
+  - name: Optum
+    careers_url: https://careers.unitedhealthgroup.com/search-jobs/India/
+    scan_method: playwright
+    notes: 'UnitedHealth Group India — Hyderabad, Bangalore, Noida.'
+    enabled: true
+
+  # ── Expedia Group ─────────────────────────────────────────────────
+  # Workday ATS — zero-token API. Bangalore + Gurgaon hubs.
+  - name: Expedia Group
+    careers_url: https://expedia.wd108.myworkdayjobs.com/en-US/search
+    notes: 'Workday API — Bangalore + Gurgaon engineering hub.'
+    enabled: true
+
+  # ── Bayer ─────────────────────────────────────────────────────────
+  # Eightfold AI ATS — no public API, Playwright required.
+  - name: Bayer
+    careers_url: https://bayer.eightfold.ai/careers?query=Software%20Development&location=India&department=Information%20Technology&domain=bayer.com
+    scan_method: playwright
+    notes: 'Eightfold AI ATS — India IT division.'
+    enabled: true
+
+  # ── SLB (Schlumberger) ───────────────────────────────────────────
+  # Coveo custom ATS — Playwright required.
+  - name: SLB
+    careers_url: https://careers.slb.com/job-listing#q=software%20Engineer&sortCriteria=date%20descending&f-category-job=Digital%20Technology%20%26%20Research,Engineering%20%26%20Design&f-country-job=India
+    scan_method: playwright
+    notes: 'Coveo ATS — India Digital Technology roles, newest first.'
+    enabled: true
+
+  # ── SAP Labs India ───────────────────────────────────────────────
+  # SAP SuccessFactors custom ATS — Playwright required.
+  - name: SAP Labs
+    careers_url: https://jobs.sap.com/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_department=Software-Design+and+Development&optionsFacetsDD_country=IN
+    scan_method: playwright
+    notes: 'SAP SuccessFactors ATS — Bangalore, Pune, Hyderabad.'
+    enabled: true
+
+  # ── Nokia ────────────────────────────────────────────────────────
+  # Oracle HCM custom ATS — Playwright required. Pre-filtered to India + 30 days.
+  - name: Nokia
+    careers_url: https://jobs.nokia.com/en/sites/CX_1/jobs?keyword=Software+Engineer&lastSelectedFacet=POSTING_DATES&location=India&locationId=300000000471745&locationLevel=country&mode=location&selectedPostingDatesFacet=30
+    scan_method: playwright
+    notes: 'Oracle HCM ATS — Chennai, Bangalore, Hyderabad. URL pre-filtered to last 30 days.'
+    enabled: true
+
+  # ── Adobe ─────────────────────────────────────────────────────────
+  # Workday ATS — zero-token API. Noida + Bangalore hubs.
+  - name: Adobe
+    careers_url: https://adobe.wd5.myworkdayjobs.com/external_experienced
+    notes: 'Workday API — Noida + Bangalore India hub.'
+    enabled: true
+
+  # ── Target India ─────────────────────────────────────────────────
+  # Phenom People custom ATS — Playwright required.
+  - name: Target India
+    careers_url: https://indiajobs.target.com/location/bengaluru-jobs/1118/1269750-1267701-1277333/4
+    scan_method: playwright
+    notes: 'Phenom People ATS — Bengaluru technology hub.'
+    enabled: true
+
+  # ── Barclays ─────────────────────────────────────────────────────
+  # Oracle iRecruitment custom ATS — Playwright required.
+  - name: Barclays
+    careers_url: https://search.jobs.barclays/search-jobs?orgIds=13015&ac=44699
+    scan_method: playwright
+    notes: 'Oracle iRecruitment ATS — Pune technology hub.'
+    enabled: true
+
+  # ── Meesho ───────────────────────────────────────────────────────
+  # Custom careers page — Playwright required.
+  - name: Meesho
+    careers_url: https://www.meesho.io/jobs?d=engineering
+    scan_method: playwright
+    notes: 'Bangalore-based Indian e-commerce — engineering division.'
+    enabled: true
+  - name: Albertsons technology
+    careers_url: https://talent500.com/jobs/albertsonsindia/?experienceLevel=1%20-%203%20years&team=Technology
+    scan_methos: playwright
+    enabled: true
 
 # tracked_companies:
 #   # -- AI Labs & LLM providers --
