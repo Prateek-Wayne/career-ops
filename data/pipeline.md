@@ -104,6 +104,19 @@ Add job URLs here, then run `/career-ops pipeline` to process them all at once.
 - [ ] https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Pune-India/Senior-Software-Engineer---Test_R-275110 | Mastercard | Senior Software Engineer - Test | Pune, India
 - [ ] https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Pune-India/Lead---Full-Stack-Web-Applications_R-276689-1 | Mastercard | Lead – Full Stack Web Applications | Pune, India
 
+- [ ] https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Bangalore/Software-Development-Engineer5_R170295-1 | Adobe | Software Development Engineer.5 | Bangalore | posted: 2026-07-08
+- [ ] https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Noida/Software-Development-Engineer-4_R170262 | Adobe | Software Development Engineer 4 | Noida | posted: 2026-07-13
+- [ ] https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Bangalore/Software-Development-Engineer_R169795-1 | Adobe | Software Development Engineer | Bangalore | posted: 2026-07-13
+- [ ] https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Noida/Software-Development-Engineer-3_R170103 | Adobe | Software Development Engineer 3 | Noida | posted: 2026-07-09
+- [ ] https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Noida/Software-Development-Engineer-3---Native-Android_R168159 | Adobe | Software Development Engineer 3 - Native Android | Noida | posted: 2026-07-09
+- [ ] https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Bangalore/Computer-Scientist---I_R169593-1 | Adobe | Computer Scientist - I ( Backend Heavy - Full Stack ) | Bangalore
+- [ ] https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Noida/Software-Engineer-2_R169381 | Adobe | Software Engineer 2 | Noida
+- [ ] https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Pune-India/Software-Engineer-II--Mainframe-Developer-_R-262302 | Mastercard | Software Engineer II (Mainframe Developer) | Pune, India | posted: 2026-07-14
+- [ ] https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Pune-India/Software-Engineer-II-Java-Full-stack-Developer_R-281493 | Mastercard | Software Engineer II Java Full stack Developer | Pune, India | posted: 2026-07-13
+- [ ] https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Pune-India/Senior-Software-Engineer--C---Developer---Unix-Linux---ISO-8583---Payment-Domain-_R-280086-1 | Mastercard | Software Engineer II (C, C++ on Unix, Experience with socket programming, IPC) | Pune, India | posted: 2026-07-08
+- [ ] https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Navi-Mumbai-India-Finicity/Software-Engineer-II_R-275092 | Mastercard | Software Engineer II | Navi Mumbai, India (Finicity) | posted: 2026-07-07
+- [ ] https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Pune-India/Software-Engineer-II--Software-Engineer-in-Test--_R-274181 | Mastercard | Software Engineer II (Software Engineer in Test ) | Pune, India
+
 ## Processed
 
 - [x] #027 | https://www.wellsfargojobs.com/en/jobs/r-551920/software-engineer-gen-ai-google-adk-langchain-python/ | Wells Fargo | Software Engineer - Gen AI / LangChain Python | 4.3/5 | PDF ❌

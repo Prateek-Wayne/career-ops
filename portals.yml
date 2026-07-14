@@ -163,6 +163,13 @@ age_filter:
 # -- Title filter --
 # The scanner uses these keywords to decide if a title is relevant.
 # At least 1 positive must match AND 0 negatives must match (case-insensitive).
+#
+# skip_tiers: drops listings classified by classify-tier.mjs as these tiers.
+# Prateek has ~2 years experience (SDE I, joined Apr 2024, intern before that) —
+# targeting Junior/Mid (0-4 yrs) per config/profile.yml archetypes, so senior+
+# roles (Staff/Principal/Lead/Director/VP, 8+ yrs) are dropped.
+skip_tiers: [senior]
+
 title_filter:
   positive:
     - 'Software Engineer'
@@ -179,6 +186,37 @@ title_filter:
     - 'Director'
     - 'VP'
     - 'Head of'
+    - 'Senior'
+    - 'Sr.'
+    - 'Sr '
+    - 'Staff'
+    - 'Principal'
+    - 'Lead'
+    - 'Architect'
+    - 'SDE 3'
+    - 'SDE III'
+    - 'SDE-3'
+    - 'SDE 4'
+    - 'SDE 5'
+    - 'SDE 6'
+    - 'SDE-4'
+    - 'SDE-5'
+    - 'SDE-6'
+    - 'Engineer 3'
+    - 'Engineer 4'
+    - 'Engineer 5'
+    - 'Engineer 6'
+    - 'Engineer.3'
+    - 'Engineer.4'
+    - 'Engineer.5'
+    - 'Engineer.6'
+    - 'Engineer-3'
+    - 'Engineer-4'
+    - 'Engineer-5'
+    - 'Engineer-6'
+    - 'L5'
+    - 'L6'
+    - 'L7'
 
 # -- Search queries --
 # Each query triggers a WebSearch. Use site: to filter by portal.
@@ -789,11 +827,13 @@ tracked_companies:
     enabled: true
 
   # ── Precisely ─────────────────────────────────────────────────────
-  # Custom static page — Playwright required.
+  # Custom static page — Playwright required. URL is a GLOBAL jobs page,
+  # not pre-filtered to India — the location_filter above does the India
+  # narrowing after scan, so expect more noise/irrelevant results here.
   - name: Precisely
     careers_url: https://www.precisely.com/careers-and-culture/international-jobs
     scan_method: playwright
-    notes: 'India engineering roles.'
+    notes: 'Global careers page, not India-filtered at the URL level — relies on location_filter to narrow results.'
     enabled: true
 
   # ── Optum (UnitedHealth Group) ───────────────────────────────────
@@ -866,6 +906,7 @@ tracked_companies:
     notes: 'Oracle iRecruitment ATS — Pune technology hub.'
     enabled: true
 
+
   # ── Meesho ───────────────────────────────────────────────────────
   # Custom careers page — Playwright required.
   - name: Meesho
@@ -875,9 +916,56 @@ tracked_companies:
     enabled: true
   - name: Albertsons technology
     careers_url: https://talent500.com/jobs/albertsonsindia/?experienceLevel=1%20-%203%20years&team=Technology
-    scan_methos: playwright
+    scan_method: playwright
     enabled: true
 
+  # ── Microsoft ────────────────────────────────────────────────────
+  # Custom Microsoft Careers ATS — Playwright required (no public API).
+  - name: Microsoft
+    careers_url: https://apply.careers.microsoft.com/careers?hl=en&start=0&location=India&pid=1970393556928541&sort_by=distance&filter_include_remote=1&filter_profession=software+engineering&filter_seniority=Entry
+    scan_method: playwright
+    notes: 'Custom Microsoft Careers ATS — Hyderabad, Bangalore, Noida engineering hubs.'
+    enabled: true
+
+  # ── Salesforce ───────────────────────────────────────────────────
+  # Custom Salesforce careers site — Playwright required.
+  - name: Salesforce
+    careers_url: https://www.salesforce.com/company/careers/jobs/?country=India&search=Softwar+Engineer&team=Software+Engineering&page=1
+    scan_method: playwright
+    notes: 'Custom careers site — Hyderabad + Bangalore engineering offices.'
+    enabled: true
+
+  # ── ServiceNow ───────────────────────────────────────────────────
+  # Custom ServiceNow careers ATS — Playwright required.
+  - name: ServiceNow
+    careers_url: https://careers.servicenow.com/jobs/?search=Software+Engineer&team=Engineering%2C+Infrastructure+and+Operations&country=India&pagesize=20#results
+    scan_method: playwright
+    notes: 'Custom careers ATS — Hyderabad R&D center.'
+    enabled: true
+
+  # ── Nutanix ──────────────────────────────────────────────────────
+  # Custom Nutanix careers ATS — Playwright required.
+  - name: Nutanix
+    careers_url: https://careers.nutanix.com/en/jobs/?search=Software+Engineer&country=India&team=Engineering&pagesize=20#results
+    scan_method: playwright
+    notes: 'Custom careers ATS — Bangalore R&D center.'
+    enabled: true
+
+  # ── Intuit ───────────────────────────────────────────────────────
+  # Custom Intuit careers ATS — Playwright required.
+  - name: Intuit
+    careers_url: https://jobs.intuit.com/search-jobs
+    scan_method: playwright
+    notes: 'Custom careers ATS — Bangalore India office.'
+    enabled: true
+
+  # ── Oracle ───────────────────────────────────────────────────────
+  # Oracle iRecruitment (OCI) ATS — Playwright required. Pre-filtered to India + 3-5+ yrs facet.
+  - name: Oracle
+    careers_url: https://careers.oracle.com/en/sites/jobsearch/jobs?lastSelectedFacet=AttributeChar6&location=India&locationId=300000000106947&selectedFlexFieldsFacets=%22AttributeChar6%7C3+to+5%2B+years%22&selectedLocationsFacet=300000000106947
+    scan_method: playwright
+    notes: 'Oracle iRecruitment ATS — Bangalore + Hyderabad India offices.'
+    enabled: true
 # tracked_companies:
 #   # -- AI Labs & LLM providers --
 
