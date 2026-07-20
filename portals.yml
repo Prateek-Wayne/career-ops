@@ -103,7 +103,7 @@ location_filter:
 # Conservative: if a job has no date, it always passes.
 # 30 days is a good default — anything older risks being a ghost opening.
 age_filter:
-  max_days: 14
+  max_days: 10
 
 # -- Trust filter (optional) --
 # Enriches each scanned job with a trust score (0-100) and flags.
@@ -689,12 +689,6 @@ search_queries:
 
 # ── Your company list ───────────────────────────────────────────────
 tracked_companies:
-  # ── VISA ──────────────────────────────────────────────────────────
-  - name: VISA
-    careers_url: https://www.visa.co.uk/en_gb/jobs/
-    scan_method: playwright
-    notes: 'Bangalore, Mumbai offices'
-    enabled: true
 
   # ── Mastercard ────────────────────────────────────────────────────
   - name: Mastercard
@@ -806,8 +800,7 @@ tracked_companies:
   # ── Visa ─────────────────────────────────────────────────────────
   # Custom Visa careers page — Playwright required (no public ATS API).
   - name: Visa
-    careers_url: https://www.visa.co.uk/en_gb/jobs/?categories=Software%20Development%2FEngineering&cities=Bangalore&cities=Mumbai&sortProperty=createdOn&sortOrder=DESC
-    scan_method: playwright
+    careers_url: https://visa.wd5.myworkdayjobs.com/Visa?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&jobFamily=2745bc1368021016a991f65e710a3b1e&jobFamily=b7106cb62669100c686bc832c23b0000
     notes: 'Bangalore + Mumbai SDE roles, sorted by newest first.'
     enabled: true
 
