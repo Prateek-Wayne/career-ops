@@ -8,7 +8,7 @@
 
 ## Professional Summary
 
-Software Development Engineer with 3+ years at Philips building production-grade full-stack applications, cloud-native microservices, and developer platforms. Shipped features end-to-end across Java, Spring Boot, React.js, and Node.js; architected observability infrastructure using Prometheus, OpenTelemetry, and Grafana; and built internal developer platform including search indexing pipelines and self-serve automation serving 1,000+ services on Backstage. AWS Certified. LeetCode Top 10%.
+Software Development Engineer with 3+ years at Philips building production-grade full-stack applications, cloud-native microservices, and developer platforms. Delivered features end-to-end across Java, Spring Boot, React.js, and Node.js; architected observability infrastructure (Prometheus, OpenTelemetry, Grafana); and built internal developer-platform automation serving 1,000+ services on Backstage. AWS Certified. LeetCode Top 10%.
 
 ---
 
@@ -29,13 +29,18 @@ Software Development Engineer with 3+ years at Philips building production-grade
 
 ### Philips — Bangalore, India
 
-**Software Development Engineer I** | Apr 2024 – Present
+**Software Development Engineer II** | Jul 2026 – Present
 
-- Built and shipped full-stack features for Ultrasound Fleet Manager across 7+ microservices — React.js dashboards for fleet utilization, Spring Boot and Node.js backend services, and RESTful APIs for real-time device metrics visualization in multi-cloud environments.
-- Optimized high-latency APIs through caching and query optimization, reducing response time by 15% (400ms → 340ms); led debug sessions and acted as primary technical escalation point for critical production incidents.
 - Architected observability platform using Prometheus, OpenTelemetry, and Grafana, enabling end-to-end distributed tracing and automated alerting across microservices — cutting mean time to diagnose production issues from hours to minutes.
+- Took end-to-end ownership of deployment infrastructure for Ultrasound Fleet Manager, managing Kubernetes and Helm-based releases, CI/CD pipelines, and production rollouts across multi-cloud environments.
+- Designed and implemented real-time session management for the platform using WebSocket keep-alive and heartbeat signals with automatic idle-logout detection — ensuring reliable device connectivity and secure session lifecycle handling.
 - Built end-to-end PGN network onboarding automation using Backstage scaffolder templates — replacing manual ticket creation and code changes with a self-serve form that auto-raises a PR for reviewer approval; reduced onboarding effort by 95% across 1,000+ services.
-- Built a Backstage search plugin that indexes configurable Confluence spaces and surfaces documentation results in the Developer Portal's unified search alongside code and service catalog entries; search-backend agnostic by design, deployed org-wide across Philips engineering.
+
+**Software Development Engineer I** | Apr 2024 – Jun 2026
+
+- Built and shipped full-stack features for Ultrasound Fleet Manager across 7+ microservices — React.js dashboards for fleet utilization, Spring Boot and Node.js backend services, and RESTful APIs for real-time device metrics visualization.
+- Optimized high-latency APIs through caching and query tuning, cutting response time by 15% (400ms → 340ms); served as primary technical escalation point for critical production incidents.
+- Built a search-backend-agnostic Backstage search plugin that indexes Confluence spaces and surfaces documentation results in the Developer Portal's unified search alongside code and service-catalog entries; deployed org-wide across Philips engineering.
 
 **Software Development Intern** | Jun 2023 – Apr 2024
 
