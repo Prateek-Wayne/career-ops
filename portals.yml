@@ -165,7 +165,7 @@ age_filter:
 # At least 1 positive must match AND 0 negatives must match (case-insensitive).
 #
 # skip_tiers: drops listings classified by classify-tier.mjs as these tiers.
-# Prateek has ~2 years experience (SDE I, joined Apr 2024, intern before that) —
+# Prateek has ~3 years experience (SDE I, joined Apr 2024, intern before that) —
 # targeting Junior/Mid (0-4 yrs) per config/profile.yml archetypes, so senior+
 # roles (Staff/Principal/Lead/Director/VP, 8+ yrs) are dropped.
 skip_tiers: [senior]
