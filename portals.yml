@@ -1875,3 +1875,352 @@ tracked_companies:
 #     maxPages: 3
 #     enabled: false
 #     notes: 'SEA job platform covering ID/SG/MY/VN. Undocumented public GraphQL API — adjust graphqlQuery if schema changes.'
+
+  # ══════════════════════════════════════════════════════════════
+  # Beyond FAANG (India-relevant) — imported from user CSV
+  # Source: 'Companies Beyond FAANG - Sheet1.csv' (user-provided list).
+  # Filtered to rows whose location column mentions India/Indian cities;
+  # deduped against companies already tracked above. scan_method left
+  # unset (defaults to Playwright real-time scan per _shared.md docs).
+  # Review periodically — some careers_url values are ATS-hosted
+  # fallbacks rather than branded pages; ATS boards may reorganize URLs.
+  # ══════════════════════════════════════════════════════════════
+  - name: 'NVIDIA Graphics'
+    careers_url: 'https://www.nvidia.com/en-in/about-nvidia/careers/'
+    notes: 'India, US, Europe'
+    enabled: true
+
+  - name: 'Adyen'
+    careers_url: 'https://careers.adyen.com/vacancies'
+    notes: 'Amsterdam, Madrid, Chicago, Sidney, Sao Paulo, Mumbai Amsterdam, Madrid Amsterdam, Madrid, Chicago Amsterdam, Chicago, Madrid, New York, San'
+    enabled: true
+
+  - name: 'DevOn'
+    careers_url: 'https://careers.devon.global/vacancies/'
+    notes: 'Delft (Netherlands, mostly remote), India (Bengaluru, Delhi)'
+    enabled: true
+
+  - name: 'Timescale'
+    careers_url: 'https://www.timescale.com/careers/'
+    notes: 'Remote (US, most of a europe, India)'
+    enabled: true
+
+  - name: 'Lummo'
+    careers_url: 'https://lummo.hire.trakstar.com/'
+    notes: 'Remote (south east asia) India (GMT+5:30), Indonesia (GMT+7)'
+    enabled: true
+
+  - name: 'Springboard'
+    careers_url: 'https://jobs.lever.co/springboard?department=Technology'
+    notes: 'India, IST'
+    enabled: true
+
+  - name: 'Redpanda'
+    careers_url: 'https://redpanda.com/careers'
+    notes: 'Everywhere. Where 100% remote. Most of the team is split between Americas and Europe but we have people in Japan, Philipines and India. Ever'
+    enabled: true
+
+  - name: 'Elsevier'
+    careers_url: 'https://relx.wd3.myworkdayjobs.com/en-US/ElsevierJobs?jobFamilyGroup=8c5fc5940f0b01ba8d012114be0035b9&locations=8c5fc5940f0b011f44029399b200b119'
+    notes: 'Amsterdam (and globally, including US but main tech hub is in Ams) Amsterdam, London, Philadelphia, Bangalore, Chennai'
+    enabled: true
+
+  - name: 'Booking.com'
+    careers_url: 'https://careers.booking.com/'
+    notes: 'Amsterdam, London, Manchester Amsterdam, London, Bangalore Amsterdam, Manchester, India, Romania Amsterdam, Bangalore, London, Manchester, T'
+    enabled: true
+
+  - name: 'Apollo.io'
+    careers_url: 'https://boards.greenhouse.io/apolloio'
+    notes: 'Remote worldwide but heavy focus on USA, Canada, India and the Philippines Remote US, India and Philippines'
+    enabled: true
+
+  - name: 'Hasura'
+    careers_url: 'https://hasura.io/careers/#hasura-open-roles'
+    notes: 'US, India, Remote'
+    enabled: true
+
+  - name: 'FamPay'
+    careers_url: 'https://jobs.lever.co/fampay/'
+    notes: 'India'
+    enabled: true
+
+  - name: 'Clarisights'
+    careers_url: 'https://careers.clarisights.com/'
+    notes: 'Bangalore , India'
+    enabled: true
+
+  - name: 'OLX group'
+    careers_url: 'https://hire.eu.lever.co/jobs/internal?commitment=Full-time'
+    notes: 'Barcelona, Bulgaria, India, Berlín, USA'
+    enabled: true
+
+  - name: 'Cogitation Systems'
+    careers_url: 'https://coditation.kekahire.com'
+    notes: 'All over India'
+    enabled: true
+
+  - name: 'ZF - SCALAR'
+    careers_url: 'https://jobs.zf.com/search/?createNewAlert=false&q=Commercial+Vehicle+Solutions&optionsFacetsDD_facility=Research+and+Development&optionsFacetsDD_shifttype=&optionsFacetsDD_country=&locationsearch='
+    notes: 'Dublin, Bruxelles, Ieper, Lausanne (Switzerland), France, Germany, Poland, India'
+    enabled: true
+
+  - name: 'GrayQuest'
+    careers_url: 'https://www.grayquest.com/contact'
+    notes: 'Mumbai, India'
+    enabled: true
+
+  - name: 'Gameberry Labs'
+    careers_url: 'https://gameberrylabs.com/jobs'
+    notes: 'Bangalore'
+    enabled: true
+
+  - name: 'Ping Identity'
+    careers_url: 'https://jobs.jobvite.com/pingidentitycareers/jobs'
+    notes: 'US, India'
+    enabled: true
+
+  - name: 'Toast'
+    careers_url: 'https://careers.toasttab.com'
+    notes: 'US, India, Ireland, Canada'
+    enabled: true
+
+  - name: 'Groww'
+    careers_url: 'https://groww.in/careers'
+    notes: 'Bengaluru, India'
+    enabled: true
+
+  - name: 'Walmart Global Tech'
+    careers_url: 'https://tech.walmart.com/'
+    notes: 'Seattle, Sunnyvale, Reston, Atlanta, NYC Metro, Dallas India, US'
+    enabled: true
+
+  - name: 'Adform'
+    careers_url: 'http://join.adform.com/'
+    notes: 'Lithuania, Poland, India'
+    enabled: true
+
+  - name: 'ChargePoint'
+    careers_url: 'https://www.chargepoint.com/about/opportunities'
+    notes: 'Campbell, CA (San Jose Area), Amsterdam, Europe, India'
+    enabled: true
+
+  - name: 'Rippling'
+    careers_url: 'https://www.rippling.com/careers'
+    notes: 'India, San Francisco'
+    enabled: true
+
+  - name: 'Akamai Technologies'
+    careers_url: 'https://akamaicareers.inflightcloud.com/'
+    notes: 'US(Remote), India'
+    enabled: true
+
+  - name: 'Energy Exemplar'
+    careers_url: 'https://www.energyexemplar.com/careers/'
+    notes: 'Pune, Bangalore, Salt Lake City, Adelaide'
+    enabled: true
+
+  - name: 'Deliveroo'
+    careers_url: 'https://boards.greenhouse.io/deliveroo'
+    notes: 'United Kingdom, London or remote & India, remote'
+    enabled: true
+
+  - name: 'Fazz'
+    careers_url: 'https://jobs.lever.co/fazzfinancial?department=Technology'
+    notes: 'Indonesia, Malaysia, Singapore, Vietnam, Taiwan, India'
+    enabled: true
+
+  - name: 'Simpplr'
+    careers_url: 'https://www.simpplr.com/about/careers/'
+    notes: 'Toronto (Canada), Brighton (UK), Bengaluru/Gurugram (India)'
+    enabled: true
+
+  - name: 'Toplyne'
+    careers_url: 'https://www.toplyne.io/join-us'
+    notes: 'Bangalore, India'
+    enabled: true
+
+  - name: 'Shell Recharge (Solutions)'
+    careers_url: 'https://shellrecharge.com/en-gb/solutions/company/careers'
+    notes: 'US, Europe, India, Singapore'
+    enabled: true
+
+  - name: 'Gentrack'
+    careers_url: 'https://gentrack.com/careers/#roles'
+    notes: 'Remote - India, UK, Australia or New Zealand'
+    enabled: true
+
+  - name: 'MoEngage'
+    careers_url: 'https://moengage.darwinbox.in/ms/candidate/careers'
+    notes: 'Bengaluru (India) , Jakarta (Indonesia), Ho Chi Minh City (Vietnam)'
+    enabled: true
+
+  - name: 'Emis Group'
+    careers_url: 'https://emis.current-vacancies.com/Website/Search?txtKeyword=Emis'
+    notes: 'UK, London, Leeds, Chennai'
+    enabled: true
+
+  - name: 'R3'
+    careers_url: 'https://www.r3.com/careers/#job-openings'
+    notes: 'London, Dublin, Sofia, Mumbai'
+    enabled: true
+
+  - name: 'Couchbase'
+    careers_url: 'https://www.couchbase.com/careers/open-positions'
+    notes: 'US, UK, Canada, India'
+    enabled: true
+
+  - name: 'IMC Trading'
+    careers_url: 'https://careers.imc.com/eu/en'
+    notes: 'Amsterdam, Chicago, Sydney, and Mumbai Chicago, Amsterdam, Sydney, Mumbai'
+    enabled: true
+
+  - name: 'Leaseweb'
+    careers_url: 'https://www.leaseweb.com/career/departments/product-engineering'
+    notes: 'Amsterdam, Lisbon, Bangalore, Montreal'
+    enabled: true
+
+  - name: 'Scribble Data Inc'
+    careers_url: 'https://www.scribbledata.io/careers/'
+    notes: 'Toronto, Bangalore, Remote'
+    enabled: true
+
+  - name: 'Pepsico'
+    careers_url: 'https://www.pepsicojobs.com/main/'
+    notes: 'Europe, USA, india'
+    enabled: true
+
+  - name: 'Builder.ai'
+    careers_url: 'https://www.builder.ai/careers'
+    notes: 'London, Delhi'
+    enabled: true
+
+  - name: 'Disney+ Hotstar'
+    careers_url: 'https://jobs.lever.co/hotstar'
+    notes: 'India, China, Remote'
+    enabled: true
+
+  - name: 'HackerRank'
+    careers_url: 'https://www.hackerrank.com/careers'
+    notes: 'Remote within India'
+    enabled: true
+
+  - name: 'MetaMap'
+    careers_url: 'https://boards.greenhouse.io/metamap'
+    notes: 'Bangalore, India'
+    enabled: true
+
+  - name: 'StreamSets'
+    careers_url: 'https://jobs.lever.co/streamsets'
+    notes: 'US, EMEA, Spain, India, Australia'
+    enabled: true
+
+  - name: 'New Relic'
+    careers_url: 'https://newrelic.careers'
+    notes: 'Most Europe, US, Remote USA-Remote, Spain-Remote, India-Remote and many more global locations'
+    enabled: true
+
+  - name: 'Continental AG'
+    careers_url: 'https://www.continental-jobs.com/'
+    notes: 'Germany, North America, Mexico, India, etc.'
+    enabled: true
+
+  - name: 'BlackBerry'
+    careers_url: 'https://bb.wd3.myworkdayjobs.com/BlackBerry/jobs'
+    notes: 'India, USA, Canada, Europe, Global'
+    enabled: true
+
+  - name: 'Intelex Technologies Inc'
+    careers_url: 'https://boards.greenhouse.io/intelextechnologies/'
+    notes: 'India, US, Canada'
+    enabled: true
+
+  - name: 'Pulley'
+    careers_url: 'https://pulley.com/careers'
+    notes: 'Full remote across US, Canada, Brazil, India, and UK.'
+    enabled: true
+
+  - name: 'BlackLine'
+    careers_url: 'https://careers.blackline.com/careers-home/'
+    notes: 'United States (Remote), UK (Remote), Netherlands (Hybrid), India - Bangalore'
+    enabled: true
+
+  - name: 'Coupa Software'
+    careers_url: 'https://careers.coupa.com/global/en/c/engineering-jobs'
+    notes: 'San Mateo, CA; San Diego, CA; Ann Arbor, Michigan; Seattle, Washington; Vancouver, BC; Karlsruhe, Germany; Ettenheim, Germany; Uppsala, Swed'
+    enabled: true
+
+  - name: 'Hewlett-Packard Enterprise'
+    careers_url: 'https://careers.hpe.com/us/en/search-results'
+    notes: 'UK (Bristol), US, India'
+    enabled: true
+
+  - name: 'Eventbrite'
+    careers_url: 'https://www.eventbritecareers.com/jobs/search?page=1&query='
+    notes: 'US, UK, Ireland, Spain, India, Argentina, Remote'
+    enabled: true
+
+  - name: 'Goldman Sachs'
+    careers_url: 'https://www.goldmansachs.com/careers/students/programs/india/engineers-campus-hiring-program.html'
+    notes: 'India'
+    enabled: true
+
+  - name: 'HighLevel'
+    careers_url: 'https://www.gohighlevel.com/careers'
+    notes: 'Remote, India'
+    enabled: true
+
+  - name: 'AccelByte Inc.'
+    careers_url: 'https://accelbyte.io/careers/'
+    notes: 'Indonesia, USA (Remote), Canada (Remote), India, Philippines, Europe Timezone/Europe'
+    enabled: true
+
+  - name: 'Tide'
+    careers_url: 'https://boards.greenhouse.io/tide'
+    notes: 'UK; India; Bulgaria; Romania'
+    enabled: true
+
+  - name: 'Sita Aero'
+    careers_url: 'https://sita.taleo.net/careersection/3/jobsearch.ftl?lang=en&portal=8205120319'
+    notes: 'Multiple locations - Europe, Middle East, India, USA'
+    enabled: true
+
+  - name: 'Bahwan Cybertek'
+    careers_url: 'https://bahwan-cybertek-group.workable.com/backend'
+    notes: 'Delhi, Bangalore, Chennai Chennai, Bangalore, WFH'
+    enabled: true
+
+  - name: 'Medidata'
+    careers_url: 'https://www.medidata.com/en/careers/job-search/'
+    notes: 'United States (SF, NY, NJ & Remote), India (Pune), United Kingdom (Hammersmith), Japan (Tokyo), South Korea'
+    enabled: true
+
+  - name: 'Prodigy Finance'
+    careers_url: 'https://prodigyfinance.bamboohr.com/jobs/'
+    notes: '(Remote) EMEA, India, South Africa'
+    enabled: true
+
+  - name: 'Productsup'
+    careers_url: 'https://www.productsup.com/careers/open-roles/'
+    notes: 'US, UK, Europe and India, or Remote.'
+    enabled: true
+
+  - name: 'NxtWave'
+    careers_url: 'https://nxtwave.freshteam.com/jobs?location=[]&department=[%225000114928%22]&jobType=[]&title=&isRemoteLocation=false'
+    notes: 'India, Hyderabad'
+    enabled: true
+
+  - name: 'Palo Alto Networks'
+    careers_url: 'https://jobs.paloaltonetworks.com/en/jobs/'
+    notes: 'North America, Tel Aviv, Bengaluru'
+    enabled: true
+
+  - name: 'Backbase'
+    careers_url: 'https://www.backbase.com/careers'
+    notes: 'Amsterdam, UK, Krakow, Hyderabad'
+    enabled: true
+
+  - name: 'Expeditors'
+    careers_url: 'https://web.expeditors.com/careers/'
+    notes: 'Seattle, Dublin, Ohio, San Diego, India, TX, NH etc.'
+    enabled: true
