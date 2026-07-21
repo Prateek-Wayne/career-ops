@@ -1,8 +1,9 @@
 
 ## Pending
 
-(none — all processed 2026-07-20)
-
+- [ ] https://gameberry.keka.com/careers/jobdetails/78044 | Gameberry Labs | SDE - I (PS)
+- [ ] https://www.hackerrank.com/careers/job?id=7771695#Software%20Development%20Engineer%20in%20Test%20II | HackerRank | Software Development Engineer in Test II
+- [ ] https://nxtwave.freshteam.com/jobs/IZM4QfSpBhtB/full-stack-developer-2 | NxtWave | Full Stack Developer - 2
 ## Processed
 
 - [x] #043 | https://apply.careers.microsoft.com/careers/job/1970393556636678?hl=en | Microsoft | Software Engineer | 4.5/5 | PDF ❌
