@@ -172,3 +172,64 @@ https://indiajobs.target.com/job/bengaluru/engineer-target-india/34386/919129279
 https://gameberry.keka.com/careers/jobdetails/78044	2026-07-21	playwright-cli	SDE - I (PS)	Gameberry Labs	added	Bangalore
 https://www.hackerrank.com/careers/job?id=7771695#Software%20Development%20Engineer%20in%20Test%20II	2026-07-21	playwright-cli	Software Development Engineer in Test II	HackerRank	added	Hybrid in Bangalore, India
 https://nxtwave.freshteam.com/jobs/IZM4QfSpBhtB/full-stack-developer-2	2026-07-21	playwright-cli	Full Stack Developer - 2	NxtWave	added	
+https://careers.americanexpress.com/en/sites/CX_1/jobs	2026-07-21	playwright-cli	Software Engineer I / II	American Express	added	Chennai
+https://bayer.eightfold.ai/careers?query=Software%20Development&location=India&department=Information%20Technology&pid=562949978171057&domain=bayer.com	2026-07-21	playwright-cli	Software Engineer	Bayer	added	Bangalore
+https://bayer.eightfold.ai/careers?query=Software%20Development&location=India&department=Information%20Technology&pid=562949978135848&domain=bayer.com	2026-07-21	playwright-cli	Software Engineer II	Bayer	added	Bangalore
+https://careers.slb.com/jobdescription.aspx?id=EF18094-en_US	2026-07-21	playwright-cli	Back End Software Engineer	SLB	added	Pune
+https://jobs.nokia.com/en/sites/CX_1/job/33801/?keyword=Software+Engineer&location=India	2026-07-21	playwright-cli	Software Engineer	Nokia	added	India
+https://jobs.nvidia.com/careers?query=Software+Engineer&location=India&pid=893383402611	2026-07-21	playwright-cli	System Software Engineer - OpenBMC	NVIDIA Graphics	added	Bengaluru
+https://ats.rippling.com/rippling/jobs/f0269de1-172f-41cf-93a9-fc1ca2509ae5	2026-07-21	playwright-cli	Software Engineer II	Rippling	added	Bangalore
+https://gentrack.bamboohr.com/careers/1394	2026-07-21	bamboohr-api	Software Engineer Intermediate	Gentrack	added	Pune
+https://www.backbase.com/careers/jobs/7570898-ai-applied-software-engineer	2026-07-21	playwright-cli	AI Applied Software Engineer	Backbase	added	Hyderabad
+https://jobs.lever.co/gohighlevel/ce928065-f2cf-4412-a5e7-32677e6f4e4b	2026-07-21	lever-api	Full Stack Builder (Team of One)	HighLevel	added	India
+https://careers.r3.com/jobs/8065142-software-engineer	2026-07-21	playwright-cli	Software Engineer	R3	added	Mumbai
+https://careers.hpe.com/us/en/job/1205279/Software-Engineer	2026-07-21	playwright-cli	Software Engineer	Hewlett-Packard Enterprise	added	Bengaluru
+https://careers.hpe.com/us/en/job/1205967/DAOS-Software-Engineer	2026-07-21	playwright-cli	DAOS Software Engineer	Hewlett-Packard Enterprise	added	Bengaluru
+n/a	2026-07-21	playwright-cli	n/a	Mastercard	skipped_dup	n/a — Workday board already covered by scan.mjs Level 0 workday-api provider
+n/a	2026-07-21	playwright-cli	n/a	Atlassian	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Precisely	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Optum	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	SAP Labs	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Meesho	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Salesforce	skipped_no_match	n/a — near-miss "MTS/SMTS (Full-Stack)" hyphenation excluded, flagged
+n/a	2026-07-21	playwright-cli	n/a	ServiceNow	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Nutanix	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Oracle	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Adyen	skipped_partial	n/a — JS combobox search unverified, gap flagged
+n/a	2026-07-21	playwright-cli	n/a	DevOn	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Timescale (Tiger Data)	skipped_no_match	n/a — only Database Support Engineer role
+n/a	2026-07-21	playwright-cli	n/a	Hasura (now PromptQL)	skipped_no_match	n/a — rebranded, only Staff/senior roles; CONFIG NOTE flagged
+n/a	2026-07-21	playwright-cli	n/a	Clarisights	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	ZF - SCALAR	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Toast	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Energy Exemplar	skipped_no_match	n/a — no India SDE/junior matches
+n/a	2026-07-21	playwright-cli	n/a	Simpplr	skipped_no_match	n/a — only 1 Sales role total
+n/a	2026-07-21	playwright-cli	n/a	Toplyne	skipped_unreachable	n/a — 404, careers_url dead
+n/a	2026-07-21	playwright-cli	n/a	Shell Recharge (Solutions)	skipped_unreachable	n/a — LinkedIn authwall, unreachable
+n/a	2026-07-21	playwright-cli	n/a	Lummo	skipped_no_match	n/a — only 1 Sr Product Designer role
+n/a	2026-07-21	playwright-cli	n/a	Bahwan Cybertek	skipped_no_match	n/a — 0 jobs via Workable API
+n/a	2026-07-21	playwright-cli	n/a	Redpanda	skipped_no_match	n/a — 18 jobs, none in India
+n/a	2026-07-21	playwright-cli	n/a	New Relic	skipped_no_match	n/a — 18 India roles all Senior+
+n/a	2026-07-21	playwright-cli	n/a	Pulley	skipped_no_match	n/a — 0 jobs total
+n/a	2026-07-21	playwright-cli	n/a	Coupa Software	skipped_no_match	n/a — 17 India roles all Lead/Sr/Director
+n/a	2026-07-21	playwright-cli	n/a	Couchbase	skipped_no_match	n/a — 7 India roles all Lead/Senior/Sr
+n/a	2026-07-21	playwright-cli	n/a	Productsup	skipped_no_match	n/a — only 4 jobs total, Senior only
+n/a	2026-07-21	playwright-cli	n/a	AccelByte Inc.	skipped_no_match	n/a — 4 jobs, all Indonesia not India
+n/a	2026-07-21	playwright-cli	n/a	Scribble Data Inc	skipped_no_match	n/a — 1 role, Lead Engineer only
+n/a	2026-07-21	playwright-cli	n/a	Pepsico	skipped_no_match	n/a — 0 literal matches; 2 "Fullstack Developer" near-misses flagged (missing space)
+n/a	2026-07-21	playwright-cli	n/a	Cogitation Systems	skipped_unreachable	n/a — SSL cert error, CONFIG flagged
+n/a	2026-07-21	playwright-cli	n/a	Ping Identity	skipped_unreachable	n/a — dead Jobvite URL, CONFIG flagged
+n/a	2026-07-21	playwright-cli	n/a	GrayQuest	skipped_unreachable	n/a — careers_url wrong (points to /contact), CONFIG flagged
+n/a	2026-07-21	playwright-cli	n/a	Akamai Technologies	skipped_unreachable	n/a — careers_url copy-paste of Rippling's, CONFIG flagged
+n/a	2026-07-21	playwright-cli	n/a	IMC Trading	skipped_unreachable	n/a — careers_url redirects to generic homepage, CONFIG flagged
+n/a	2026-07-21	playwright-cli	n/a	Emis Group	skipped_unreachable	n/a — careers_url is unrelated 3rd-party board, CONFIG flagged
+n/a	2026-07-21	playwright-cli	n/a	Leaseweb	skipped_unreachable	n/a — job widget didn't render this scan
+n/a	2026-07-21	playwright-cli	n/a	Builder.ai	skipped_unreachable	n/a — SSL error, site possibly defunct
+n/a	2026-07-21	playwright-cli	n/a	Continental AG	skipped_expired	n/a — 7 India "Software Engineer" reqs found via internal JSON API, all published 2025-12-22 to 2026-06-29 — outside 10-day freshness window
+n/a	2026-07-21	playwright-cli	n/a	Tide	skipped_no_match	n/a — Greenhouse API, 36 India roles, all Senior/Staff/Manager/Director
+n/a	2026-07-21	playwright-cli	n/a	Apollo.io	skipped_no_match	n/a — Greenhouse API, 1 India role (Senior Backend Engineer) excluded by Senior marker
+n/a	2026-07-21	playwright-cli	n/a	Deliveroo	skipped_unreachable	n/a — Greenhouse board 404, CONFIG flagged
+n/a	2026-07-21	playwright-cli	n/a	MetaMap	skipped_unreachable	n/a — Greenhouse board 404, CONFIG flagged
+n/a	2026-07-21	playwright-cli	n/a	Intelex Technologies Inc	skipped_unreachable	n/a — Greenhouse board 404, CONFIG flagged
+n/a	2026-07-21	playwright-cli	n/a	BlackLine	skipped_no_match	n/a — Workday board, 56 keyword hits, none in India
+n/a	2026-07-21	playwright-cli	n/a	Hewlett-Packard Enterprise	skipped_partial	n/a — PARTIAL: 270 India results, only page 1 of ~27 scanned before scan stopped by user; near-miss "Principle Software Engineer" flagged (likely typo for Principal)

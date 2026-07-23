@@ -52,32 +52,32 @@
 
 location_filter:
   allow:
-    - 'India'
-    - 'Bangalore'
-    - 'Bengaluru'
-    - 'Hyderabad'
-    - 'Gurugram'
-    - 'Gurgaon'
-    - 'Pune'
-    - 'Mumbai'
-    - 'Chennai'
-    - 'Noida'
-    - 'Delhi'
+    - "India"
+    - "Bangalore"
+    - "Bengaluru"
+    - "Hyderabad"
+    - "Gurugram"
+    - "Gurgaon"
+    - "Pune"
+    - "Mumbai"
+    - "Chennai"
+    - "Noida"
+    - "Delhi"
   block:
-    - 'United States'
-    - 'Remote - US'
-    - 'Remote - United States'
-    - 'Remote, US'
-    - 'Remote, USA'
-    - 'Canada'
-    - 'United Kingdom'
-    - 'Germany'
-    - 'Ireland'
-    - 'Spain'
-    - 'Sweden'
-    - 'Europe'
-    - 'Australia'
-    - 'Singapore'
+    - "United States"
+    - "Remote - US"
+    - "Remote - United States"
+    - "Remote, US"
+    - "Remote, USA"
+    - "Canada"
+    - "United Kingdom"
+    - "Germany"
+    - "Ireland"
+    - "Spain"
+    - "Sweden"
+    - "Europe"
+    - "Australia"
+    - "Singapore"
 
 # -- Salary filter (optional) --
 # Filter scanned jobs by annual compensation range. Applied AFTER location
@@ -172,51 +172,51 @@ skip_tiers: [senior]
 
 title_filter:
   positive:
-    - 'Software Engineer'
-    - 'Backend Engineer'
-    - 'Full Stack'
-    - 'Node.js'
-    - 'Frontend Engineer'
-    - 'SDE' # Software Development Engineer (common in India)
-    - 'Software Development Engineer'
+    - "Software Engineer"
+    - "Backend Engineer"
+    - "Full Stack"
+    - "Node.js"
+    - "Frontend Engineer"
+    - "SDE" # Software Development Engineer (common in India)
+    - "Software Development Engineer"
   negative:
-    - 'Intern'
-    - 'Junior'
-    - 'Manager'
-    - 'Director'
-    - 'VP'
-    - 'Head of'
-    - 'Senior'
-    - 'Sr.'
-    - 'Sr '
-    - 'Staff'
-    - 'Principal'
-    - 'Lead'
-    - 'Architect'
-    - 'SDE 3'
-    - 'SDE III'
-    - 'SDE-3'
-    - 'SDE 4'
-    - 'SDE 5'
-    - 'SDE 6'
-    - 'SDE-4'
-    - 'SDE-5'
-    - 'SDE-6'
-    - 'Engineer 3'
-    - 'Engineer 4'
-    - 'Engineer 5'
-    - 'Engineer 6'
-    - 'Engineer.3'
-    - 'Engineer.4'
-    - 'Engineer.5'
-    - 'Engineer.6'
-    - 'Engineer-3'
-    - 'Engineer-4'
-    - 'Engineer-5'
-    - 'Engineer-6'
-    - 'L5'
-    - 'L6'
-    - 'L7'
+    - "Intern"
+    - "Junior"
+    - "Manager"
+    - "Director"
+    - "VP"
+    - "Head of"
+    - "Senior"
+    - "Sr."
+    - "Sr "
+    - "Staff"
+    - "Principal"
+    - "Lead"
+    - "Architect"
+    - "SDE 3"
+    - "SDE III"
+    - "SDE-3"
+    - "SDE 4"
+    - "SDE 5"
+    - "SDE 6"
+    - "SDE-4"
+    - "SDE-5"
+    - "SDE-6"
+    - "Engineer 3"
+    - "Engineer 4"
+    - "Engineer 5"
+    - "Engineer 6"
+    - "Engineer.3"
+    - "Engineer.4"
+    - "Engineer.5"
+    - "Engineer.6"
+    - "Engineer-3"
+    - "Engineer-4"
+    - "Engineer-5"
+    - "Engineer-6"
+    - "L5"
+    - "L6"
+    - "L7"
 
 # -- Search queries --
 # Each query triggers a WebSearch. Use site: to filter by portal.
@@ -689,7 +689,6 @@ search_queries:
 
 # ── Your company list ───────────────────────────────────────────────
 tracked_companies:
-
   # ── Mastercard ────────────────────────────────────────────────────
   - name: Mastercard
     careers_url: https://careers.mastercard.com/us/en/search-results
@@ -700,14 +699,14 @@ tracked_companies:
   - name: American Express
     careers_url: https://aexp.eightfold.ai/careers
     scan_method: playwright
-    notes: 'Node.js, Software Engineering roles'
+    notes: "Node.js, Software Engineering roles"
     enabled: true
 
   # ── Postman ──────────────────────────────────────────────────────
   - name: Postman
     careers_url: https://job-boards.greenhouse.io/postman
     api: https://boards-api.greenhouse.io/v1/boards/postman/jobs
-    notes: 'Bangalore-based, API/developer tooling — strong match'
+    notes: "Bangalore-based, API/developer tooling — strong match"
     enabled: true
 
   # ── Atlassian ────────────────────────────────────────────────────
@@ -715,9 +714,9 @@ tracked_companies:
   # Jobs are listed at: https://www.atlassian.com/company/careers/all-jobs?team=Engineering&location=India
   # Playwright is required — zero-token API scan not possible.
   - name: Atlassian
-    careers_url: https://www.atlassian.com/company/careers/all-jobs?team=Engineering&location=India&search=
+    careers_url: https://www.atlassian.com/company/careers/all-jobs?team=&location=India&search=
     scan_method: playwright
-    notes: 'Bangalore hub, ~2,000+ engineers in India. Full-stack, platform, cloud roles.'
+    notes: "Bangalore hub, ~2,000+ engineers in India. Full-stack, platform, cloud roles."
     enabled: true
 
   # ── CRED ──────────────────────────────────────────────────────────
@@ -728,7 +727,7 @@ tracked_companies:
   # ── Elastic ──────────────────────────────────────────────────────
   - name: Elastic
     careers_url: https://jobs.lever.co/elastic
-    notes: 'Remote-friendly, observability/search stack'
+    notes: "Remote-friendly, observability/search stack"
     enabled: true
 
   # ── Cloudflare ───────────────────────────────────────────────────
@@ -741,7 +740,7 @@ tracked_companies:
   - name: Vercel
     careers_url: https://job-boards.greenhouse.io/vercel
     api: https://boards-api.greenhouse.io/v1/boards/vercel/jobs
-    notes: 'Frontend infra, Next.js — React.js match'
+    notes: "Frontend infra, Next.js — React.js match"
     enabled: true
 
   # ── Airtable ─────────────────────────────────────────────────────
@@ -754,13 +753,13 @@ tracked_companies:
   - name: Temporal
     careers_url: https://job-boards.greenhouse.io/temporal
     api: https://boards-api.greenhouse.io/v1/boards/temporal/jobs
-    notes: 'Workflow orchestration — Kafka/async match'
+    notes: "Workflow orchestration — Kafka/async match"
     enabled: true
 
   # ── Razorpay ─────────────────────────────────────────────────────
   - name: Razorpay
     careers_url: https://jobs.lever.co/razorpay
-    notes: 'Bangalore fintech, Java/Node.js stack'
+    notes: "Bangalore fintech, Java/Node.js stack"
     enabled: true
 
   # ── Zepto ─────────────────────────────────────────────────────────
@@ -771,14 +770,14 @@ tracked_companies:
   # ── Navi Technologies ────────────────────────────────────────────
   - name: Navi
     careers_url: https://jobs.lever.co/navi
-    notes: 'Bangalore fintech'
+    notes: "Bangalore fintech"
     enabled: true
 
   # ── Grafana Labs ─────────────────────────────────────────────────
   - name: Grafana Labs
     careers_url: https://job-boards.greenhouse.io/grafanalabs
     api: https://boards-api.greenhouse.io/v1/boards/grafanalabs/jobs
-    notes: 'Observability stack — direct match'
+    notes: "Observability stack — direct match"
     enabled: true
 
   # ── Wells Fargo ──────────────────────────────────────────────────
@@ -786,7 +785,7 @@ tracked_companies:
   - name: Wells Fargo
     careers_url: https://www.wellsfargojobs.com/en/jobs/?q=software+engineer&country=India&team=Technology
     scan_method: playwright
-    notes: 'India Technology division — Bangalore, Hyderabad, Chennai. Java/Spring Boot/Python roles.'
+    notes: "India Technology division — Bangalore, Hyderabad, Chennai. Java/Spring Boot/Python roles."
     enabled: true
 
   # ── eBay ─────────────────────────────────────────────────────────
@@ -794,21 +793,21 @@ tracked_companies:
   - name: eBay
     careers_url: https://jobs.ebayinc.com/us/en/bengaluru
     scan_method: playwright
-    notes: 'Bengaluru engineering hub — full-stack, Java/Spring Boot/ReactJS roles.'
+    notes: "Bengaluru engineering hub — full-stack, Java/Spring Boot/ReactJS roles."
     enabled: true
 
   # ── Visa ─────────────────────────────────────────────────────────
   # Custom Visa careers page — Playwright required (no public ATS API).
   - name: Visa
     careers_url: https://visa.wd5.myworkdayjobs.com/Visa?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e&jobFamily=2745bc1368021016a991f65e710a3b1e&jobFamily=b7106cb62669100c686bc832c23b0000
-    notes: 'Bangalore + Mumbai SDE roles, sorted by newest first.'
+    notes: "Bangalore + Mumbai SDE roles, sorted by newest first."
     enabled: true
 
   # ── Mastercard ───────────────────────────────────────────────────
   # Workday ATS — zero-token API. India offices: Pune, Vadodara.
   - name: Mastercard
     careers_url: https://mastercard.wd1.myworkdayjobs.com/CorporateCareers
-    notes: 'Workday API — Pune + Vadodara India offices.'
+    notes: "Workday API — Pune + Vadodara India offices."
     enabled: true
 
   # ── American Express ─────────────────────────────────────────────
@@ -816,7 +815,7 @@ tracked_companies:
   - name: American Express
     careers_url: https://aexp.eightfold.ai/careers?location=india&Select%20Skills=Software%20Engineering&Select%20Skills=Node.js&Select%20Skills=Software%20Development&domain=aexp.com
     scan_method: playwright
-    notes: 'Eightfold AI ATS — Gurgaon India hub.'
+    notes: "Eightfold AI ATS — Gurgaon India hub."
     enabled: true
 
   # ── Precisely ─────────────────────────────────────────────────────
@@ -826,7 +825,7 @@ tracked_companies:
   - name: Precisely
     careers_url: https://www.precisely.com/careers-and-culture/international-jobs
     scan_method: playwright
-    notes: 'Global careers page, not India-filtered at the URL level — relies on location_filter to narrow results.'
+    notes: "Global careers page, not India-filtered at the URL level — relies on location_filter to narrow results."
     enabled: true
 
   # ── Optum (UnitedHealth Group) ───────────────────────────────────
@@ -834,14 +833,14 @@ tracked_companies:
   - name: Optum
     careers_url: https://careers.unitedhealthgroup.com/search-jobs/India/
     scan_method: playwright
-    notes: 'UnitedHealth Group India — Hyderabad, Bangalore, Noida.'
+    notes: "UnitedHealth Group India — Hyderabad, Bangalore, Noida."
     enabled: true
 
   # ── Expedia Group ─────────────────────────────────────────────────
   # Workday ATS — zero-token API. Bangalore + Gurgaon hubs.
   - name: Expedia Group
     careers_url: https://expedia.wd108.myworkdayjobs.com/en-US/search
-    notes: 'Workday API — Bangalore + Gurgaon engineering hub.'
+    notes: "Workday API — Bangalore + Gurgaon engineering hub."
     enabled: true
 
   # ── Bayer ─────────────────────────────────────────────────────────
@@ -849,7 +848,7 @@ tracked_companies:
   - name: Bayer
     careers_url: https://bayer.eightfold.ai/careers?query=Software%20Development&location=India&department=Information%20Technology&domain=bayer.com
     scan_method: playwright
-    notes: 'Eightfold AI ATS — India IT division.'
+    notes: "Eightfold AI ATS — India IT division."
     enabled: true
 
   # ── SLB (Schlumberger) ───────────────────────────────────────────
@@ -857,7 +856,7 @@ tracked_companies:
   - name: SLB
     careers_url: https://careers.slb.com/job-listing#q=software%20Engineer&sortCriteria=date%20descending&f-category-job=Digital%20Technology%20%26%20Research,Engineering%20%26%20Design&f-country-job=India
     scan_method: playwright
-    notes: 'Coveo ATS — India Digital Technology roles, newest first.'
+    notes: "Coveo ATS — India Digital Technology roles, newest first."
     enabled: true
 
   # ── SAP Labs India ───────────────────────────────────────────────
@@ -865,7 +864,7 @@ tracked_companies:
   - name: SAP Labs
     careers_url: https://jobs.sap.com/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_department=Software-Design+and+Development&optionsFacetsDD_country=IN
     scan_method: playwright
-    notes: 'SAP SuccessFactors ATS — Bangalore, Pune, Hyderabad.'
+    notes: "SAP SuccessFactors ATS — Bangalore, Pune, Hyderabad."
     enabled: true
 
   # ── Nokia ────────────────────────────────────────────────────────
@@ -873,14 +872,14 @@ tracked_companies:
   - name: Nokia
     careers_url: https://jobs.nokia.com/en/sites/CX_1/jobs?keyword=Software+Engineer&lastSelectedFacet=POSTING_DATES&location=India&locationId=300000000471745&locationLevel=country&mode=location&selectedPostingDatesFacet=30
     scan_method: playwright
-    notes: 'Oracle HCM ATS — Chennai, Bangalore, Hyderabad. URL pre-filtered to last 30 days.'
+    notes: "Oracle HCM ATS — Chennai, Bangalore, Hyderabad. URL pre-filtered to last 30 days."
     enabled: true
 
   # ── Adobe ─────────────────────────────────────────────────────────
   # Workday ATS — zero-token API. Noida + Bangalore hubs.
   - name: Adobe
     careers_url: https://adobe.wd5.myworkdayjobs.com/external_experienced
-    notes: 'Workday API — Noida + Bangalore India hub.'
+    notes: "Workday API — Noida + Bangalore India hub."
     enabled: true
 
   # ── Target India ─────────────────────────────────────────────────
@@ -888,7 +887,7 @@ tracked_companies:
   - name: Target India
     careers_url: https://indiajobs.target.com/location/bengaluru-jobs/1118/1269750-1267701-1277333/4
     scan_method: playwright
-    notes: 'Phenom People ATS — Bengaluru technology hub.'
+    notes: "Phenom People ATS — Bengaluru technology hub."
     enabled: true
 
   # ── Barclays ─────────────────────────────────────────────────────
@@ -896,16 +895,15 @@ tracked_companies:
   - name: Barclays
     careers_url: https://search.jobs.barclays/search-jobs?orgIds=13015&ac=44699
     scan_method: playwright
-    notes: 'Oracle iRecruitment ATS — Pune technology hub.'
+    notes: "Oracle iRecruitment ATS — Pune technology hub."
     enabled: true
-
 
   # ── Meesho ───────────────────────────────────────────────────────
   # Custom careers page — Playwright required.
   - name: Meesho
     careers_url: https://www.meesho.io/jobs?d=engineering
     scan_method: playwright
-    notes: 'Bangalore-based Indian e-commerce — engineering division.'
+    notes: "Bangalore-based Indian e-commerce — engineering division."
     enabled: true
   - name: Albertsons technology
     careers_url: https://talent500.com/jobs/albertsonsindia/?experienceLevel=1%20-%203%20years&team=Technology
@@ -917,7 +915,7 @@ tracked_companies:
   - name: Microsoft
     careers_url: https://apply.careers.microsoft.com/careers?hl=en&start=0&location=India&pid=1970393556928541&sort_by=distance&filter_include_remote=1&filter_profession=software+engineering&filter_seniority=Entry
     scan_method: playwright
-    notes: 'Custom Microsoft Careers ATS — Hyderabad, Bangalore, Noida engineering hubs.'
+    notes: "Custom Microsoft Careers ATS — Hyderabad, Bangalore, Noida engineering hubs."
     enabled: true
 
   # ── Salesforce ───────────────────────────────────────────────────
@@ -925,7 +923,7 @@ tracked_companies:
   - name: Salesforce
     careers_url: https://www.salesforce.com/company/careers/jobs/?country=India&search=Softwar+Engineer&team=Software+Engineering&page=1
     scan_method: playwright
-    notes: 'Custom careers site — Hyderabad + Bangalore engineering offices.'
+    notes: "Custom careers site — Hyderabad + Bangalore engineering offices."
     enabled: true
 
   # ── ServiceNow ───────────────────────────────────────────────────
@@ -933,7 +931,7 @@ tracked_companies:
   - name: ServiceNow
     careers_url: https://careers.servicenow.com/jobs/?search=Software+Engineer&team=Engineering%2C+Infrastructure+and+Operations&country=India&pagesize=20#results
     scan_method: playwright
-    notes: 'Custom careers ATS — Hyderabad R&D center.'
+    notes: "Custom careers ATS — Hyderabad R&D center."
     enabled: true
 
   # ── Nutanix ──────────────────────────────────────────────────────
@@ -941,7 +939,7 @@ tracked_companies:
   - name: Nutanix
     careers_url: https://careers.nutanix.com/en/jobs/?search=Software+Engineer&country=India&team=Engineering&pagesize=20#results
     scan_method: playwright
-    notes: 'Custom careers ATS — Bangalore R&D center.'
+    notes: "Custom careers ATS — Bangalore R&D center."
     enabled: true
 
   # ── Intuit ───────────────────────────────────────────────────────
@@ -949,7 +947,7 @@ tracked_companies:
   - name: Intuit
     careers_url: https://jobs.intuit.com/search-jobs
     scan_method: playwright
-    notes: 'Custom careers ATS — Bangalore India office.'
+    notes: "Custom careers ATS — Bangalore India office."
     enabled: true
 
   # ── Oracle ───────────────────────────────────────────────────────
@@ -957,917 +955,8 @@ tracked_companies:
   - name: Oracle
     careers_url: https://careers.oracle.com/en/sites/jobsearch/jobs?lastSelectedFacet=AttributeChar6&location=India&locationId=300000000106947&selectedFlexFieldsFacets=%22AttributeChar6%7C3+to+5%2B+years%22&selectedLocationsFacet=300000000106947
     scan_method: playwright
-    notes: 'Oracle iRecruitment ATS — Bangalore + Hyderabad India offices.'
+    notes: "Oracle iRecruitment ATS — Bangalore + Hyderabad India offices."
     enabled: true
-# tracked_companies:
-#   # -- AI Labs & LLM providers --
-
-#   - name: Anthropic
-#     careers_url: https://job-boards.greenhouse.io/anthropic
-#     api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
-#     enabled: true
-
-#   - name: OpenAI
-#     careers_url: https://openai.com/careers
-#     scan_method: websearch
-#     scan_query: 'site:openai.com/careers "Solutions" OR "Forward Deployed" OR "AI Engineer"'
-#     enabled: true
-
-#   # -- Voice AI & Conversational AI --
-
-#   - name: PolyAI
-#     careers_url: https://job-boards.eu.greenhouse.io/polyai
-#     api: https://boards-api.greenhouse.io/v1/boards/polyai/jobs
-#     notes: 'UK. Voice AI for enterprise contact centers.'
-#     enabled: true
-
-#   - name: Parloa
-#     careers_url: https://job-boards.eu.greenhouse.io/parloa
-#     api: https://boards-api.greenhouse.io/v1/boards/parloa/jobs
-#     notes: 'Berlin EMEA. Voice AI enterprise.'
-#     enabled: true
-
-#   - name: Intercom
-#     careers_url: https://job-boards.greenhouse.io/intercom
-#     api: https://boards-api.greenhouse.io/v1/boards/intercom/jobs
-#     notes: 'Dublin EMEA. Fin AI agent.'
-#     enabled: true
-
-#   - name: Hume AI
-#     careers_url: https://job-boards.greenhouse.io/humeai
-#     api: https://boards-api.greenhouse.io/v1/boards/humeai/jobs
-#     notes: 'NYC. Empathic voice AI.'
-#     enabled: true
-
-#   - name: ElevenLabs
-#     careers_url: https://jobs.ashbyhq.com/elevenlabs
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/elevenlabs'
-#     notes: 'Voice AI TTS leader.'
-#     enabled: true
-
-#   - name: Deepgram
-#     careers_url: https://jobs.ashbyhq.com/deepgram
-#     scan_method: websearch
-#     scan_query: 'site:deepgram.com/careers OR "deepgram" "Solutions" OR "AI Engineer" site:jobs.ashbyhq.com'
-#     notes: 'STT/TTS APIs.'
-#     enabled: true
-
-#   - name: Vapi
-#     careers_url: https://jobs.ashbyhq.com/vapi
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/vapi'
-#     notes: 'Voice AI infrastructure.'
-#     enabled: true
-
-#   - name: Bland AI
-#     careers_url: https://jobs.ashbyhq.com/bland
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/bland'
-#     notes: 'Voice phone agents. $65M Series B.'
-#     enabled: true
-
-#   # -- AI-native platforms (FDE/SA teams) --
-
-#   - name: Retool
-#     careers_url: https://retool.com/careers
-#     scan_method: websearch
-#     scan_query: 'site:retool.com/careers "Deployed" OR "AI" OR "Solutions"'
-#     notes: 'London. Popularized Deployed Engineer role.'
-#     enabled: true
-
-#   - name: Airtable
-#     careers_url: https://job-boards.greenhouse.io/airtable
-#     api: https://boards-api.greenhouse.io/v1/boards/airtable/jobs
-#     notes: 'No-code + AI platform.'
-#     enabled: true
-
-#   - name: Vercel
-#     careers_url: https://job-boards.greenhouse.io/vercel
-#     api: https://boards-api.greenhouse.io/v1/boards/vercel/jobs
-#     notes: 'AI SDK, v0.dev. Frontend AI tooling.'
-#     enabled: true
-
-#   - name: Temporal
-#     careers_url: https://job-boards.greenhouse.io/temporal
-#     api: https://boards-api.greenhouse.io/v1/boards/temporal/jobs
-#     notes: 'Workflow orchestration.'
-#     enabled: true
-
-#   - name: Arize AI
-#     careers_url: https://job-boards.greenhouse.io/arizeai
-#     api: https://boards-api.greenhouse.io/v1/boards/arizeai/jobs
-#     notes: 'LLMOps / AI observability.'
-#     enabled: true
-
-#   - name: RunPod
-#     careers_url: https://job-boards.greenhouse.io/runpod
-#     api: https://boards-api.greenhouse.io/v1/boards/runpod/jobs
-#     notes: 'GPU cloud for AI.'
-#     enabled: true
-
-#   - name: Weights & Biases (CoreWeave)
-#     careers_url: https://job-boards.greenhouse.io/coreweave
-#     api: https://boards-api.greenhouse.io/v1/boards/coreweave/jobs
-#     notes: "Acquired by CoreWeave (announced March 2025, closed May 2025). W&B roles now live on CoreWeave's Greenhouse board. Old Lever URL (jobs.lever.co/wandb) returns 404."
-#     enabled: true
-
-#   - name: Glean
-#     careers_url: https://job-boards.greenhouse.io/gleanwork
-#     api: https://boards-api.greenhouse.io/v1/boards/gleanwork/jobs
-#     notes: 'Enterprise AI search.'
-#     enabled: true
-
-#   # -- Contact Center AI & CX --
-
-#   - name: Ada
-#     careers_url: https://job-boards.greenhouse.io/ada
-#     scan_method: websearch
-#     scan_query: '"ada.cx" OR "ada" "AI" "Solutions" OR "Engineer" site:jobs.ashbyhq.com OR site:job-boards.greenhouse.io'
-#     notes: 'Toronto + remote. AI customer service.'
-#     enabled: true
-
-#   - name: LivePerson
-#     careers_url: https://liveperson.com/company/careers
-#     scan_method: websearch
-#     scan_query: 'site:liveperson.com/careers OR "liveperson" "Solutions" OR "AI" site:job-boards.greenhouse.io'
-#     notes: 'Remote EMEA. Conversational AI enterprise.'
-#     enabled: true
-
-#   - name: Sierra
-#     careers_url: https://jobs.ashbyhq.com/sierra
-#     scan_method: websearch
-#     scan_query: '"sierra.ai" "AI" "Forward Deployed" OR "Applied" OR "Solutions" site:jobs.ashbyhq.com'
-#     notes: 'Bret Taylor (ex-CEO Salesforce). AI customer agents.'
-#     enabled: true
-
-#   - name: Decagon
-#     careers_url: https://jobs.ashbyhq.com/decagon
-#     scan_method: websearch
-#     scan_query: '"decagon" "AI" "Forward Deployed" OR "Solutions" site:jobs.ashbyhq.com'
-#     notes: 'AI customer support agents.'
-#     enabled: true
-
-#   # -- Enterprise comms & contact center --
-
-#   - name: Talkdesk
-#     careers_url: https://www.talkdesk.com/careers
-#     scan_method: websearch
-#     scan_query: 'site:talkdesk.com/careers "AI" OR "Solutions Architect" OR "AI Engineer"'
-#     notes: 'Lisbon. Contact center AI. EMEA friendly.'
-#     enabled: true
-
-#   - name: Twilio
-#     careers_url: https://www.twilio.com/en-us/company/jobs
-#     scan_method: websearch
-#     scan_query: 'site:twilio.com/company/jobs "AI" OR "Voice" "Solutions" OR "Architect"'
-#     notes: 'Voice/messaging infrastructure.'
-#     enabled: true
-
-#   - name: Dialpad
-#     careers_url: https://www.dialpad.com/careers
-#     scan_method: websearch
-#     scan_query: '"dialpad" "AI" "Solutions" OR "Engineer" site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com'
-#     notes: 'Voice AI for business comms.'
-#     enabled: true
-
-#   - name: Gong
-#     careers_url: https://www.gong.io/careers
-#     scan_method: websearch
-#     scan_query: 'site:gong.io/careers "AI" OR "Solutions" OR "Architect"'
-#     notes: 'Revenue intelligence with voice AI.'
-#     enabled: true
-
-#   - name: Genesys
-#     careers_url: https://www.genesys.com/careers
-#     scan_method: websearch
-#     scan_query: 'site:genesys.com/careers "AI" "Solutions Architect" OR "AI Engineer"'
-#     notes: 'Contact center cloud + AI.'
-#     enabled: true
-
-#   - name: Salesforce
-#     careers_url: https://careers.salesforce.com
-#     scan_method: websearch
-#     scan_query: 'site:careers.salesforce.com "Forward Deployed" OR "AI Engineer" OR "Agentforce"'
-#     notes: 'Agentforce = AI agents platform.'
-#     enabled: true
-
-#   # -- AI infra & LLMOps --
-
-#   - name: Langfuse
-#     careers_url: https://langfuse.com/careers
-#     scan_method: websearch
-#     scan_query: '"langfuse" careers OR jobs "engineer" OR "solutions"'
-#     notes: 'Berlin. LLMOps / observability.'
-#     enabled: true
-
-#   - name: Lindy
-#     careers_url: https://jobs.ashbyhq.com/lindy
-#     scan_method: websearch
-#     scan_query: '"lindy.ai" "AI" "Forward Deployed" OR "Solutions" site:jobs.ashbyhq.com'
-#     notes: 'AI agent management platform.'
-#     enabled: true
-
-#   - name: Cognigy
-#     careers_url: https://careers.cognigy.com
-#     scan_method: websearch
-#     scan_query: '"cognigy" careers "AI" OR "Solutions" OR "Engineer"'
-#     notes: 'Dusseldorf EMEA. Conversational AI enterprise.'
-#     enabled: true
-
-#   - name: Speechmatics
-#     careers_url: https://job-boards.greenhouse.io/speechmatics
-#     api: https://boards-api.greenhouse.io/v1/boards/speechmatics/jobs
-#     notes: 'Cambridge UK. Speech recognition platform.'
-#     enabled: true
-
-#   # -- No-Code/Low-Code & Automation --
-
-#   - name: n8n
-#     careers_url: https://jobs.ashbyhq.com/n8n
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/n8n'
-#     notes: 'Berlin + remote EU/US. Workflow automation.'
-#     enabled: true
-
-#   - name: Zapier
-#     careers_url: https://jobs.ashbyhq.com/zapier
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/zapier'
-#     notes: 'Remote-first. Automation platform leader.'
-#     enabled: true
-
-#   - name: Make.com (Celonis)
-#     careers_url: https://www.make.com/en/careers
-#     scan_method: websearch
-#     scan_query: 'site:make.com/en/careers OR "make.com" "engineer" OR "solutions" site:jobs.ashbyhq.com'
-#     notes: 'Celonis parent company. Automation platform.'
-#     enabled: true
-
-#   - name: Boomi
-#     careers_url: https://job-boards.greenhouse.io/boomilp
-#     api: https://boards-api.greenhouse.io/v1/boards/boomilp/jobs
-#     notes: 'Integration and automation platform.'
-#     enabled: true
-
-#   # -- Ashby-based (Playwright direct) --
-
-#   - name: Cohere
-#     careers_url: https://jobs.ashbyhq.com/cohere
-#     notes: 'AI/LLM provider. Toronto + remote.'
-#     enabled: true
-
-#   - name: LangChain
-#     careers_url: https://jobs.ashbyhq.com/langchain
-#     notes: 'LangChain/LangSmith framework.'
-#     enabled: true
-
-#   - name: Pinecone
-#     careers_url: https://jobs.ashbyhq.com/pinecone
-#     notes: 'Vector database.'
-#     enabled: true
-
-#   # -- Lever-based (Playwright direct) --
-
-#   - name: Mistral AI
-#     careers_url: https://jobs.lever.co/mistral
-#     notes: 'Paris. European AI lab.'
-#     enabled: true
-
-#   - name: Palantir
-#     careers_url: https://jobs.lever.co/palantir
-#     notes: 'FDE roles. Mostly US/London.'
-#     enabled: true
-
-#   # -- Canada / Vancouver tech & AI --
-
-#   - name: Later
-#     careers_url: https://job-boards.greenhouse.io/later
-#     api: https://boards-api.greenhouse.io/v1/boards/later/jobs
-#     notes: 'Vancouver/Toronto. Social media and creator platform.'
-#     enabled: true
-
-#   - name: Safari AI
-#     careers_url: https://job-boards.greenhouse.io/safariai
-#     api: https://boards-api.greenhouse.io/v1/boards/safariai/jobs
-#     notes: 'Miami HQ / Vancouver engineering. Computer vision AI for operations in the physical economy.'
-#     enabled: true
-
-#   - name: Hootsuite
-#     careers_url: https://job-boards.greenhouse.io/hootsuite
-#     api: https://boards-api.greenhouse.io/v1/boards/hootsuite/jobs
-#     notes: 'Vancouver. Social media management platform.'
-#     enabled: true
-
-#   - name: Klue
-#     careers_url: https://jobs.ashbyhq.com/klue
-#     notes: 'Vancouver. Competitive intelligence SaaS.'
-#     enabled: true
-
-#   - name: Glacis AI
-#     careers_url: https://jobs.ashbyhq.com/glacis-ai
-#     notes: 'Ho Chi Minh City. AI agents for supply chain and logistics workflows.'
-#     enabled: true
-
-#   - name: Sanctuary AI
-#     careers_url: https://jobs.lever.co/sanctuary
-#     notes: 'Vancouver. Humanoid robotics and embodied AI.'
-#     enabled: true
-
-#   - name: Semios
-#     careers_url: https://apply.workable.com/semios/
-#     scan_method: websearch
-#     scan_query: 'site:apply.workable.com/semios'
-#     notes: 'Vancouver. Agtech and crop intelligence platform.'
-#     enabled: true
-
-#   # -- European tech (EMEA-friendly) --
-
-#   - name: Factorial
-#     careers_url: https://job-boards.greenhouse.io/factorial
-#     scan_method: websearch
-#     scan_query: 'site:jobs.greenhouse.io/factorial'
-#     notes: 'Barcelona. HR SaaS unicorn.'
-#     enabled: true
-
-#   - name: Attio
-#     careers_url: https://jobs.ashbyhq.com/attio
-#     scan_method: websearch
-#     scan_query: 'site:attio.com/careers OR site:jobs.ashbyhq.com/attio'
-#     notes: 'Remote EU. AI-native CRM. Series B $52M.'
-#     enabled: true
-
-#   - name: Tinybird
-#     careers_url: https://jobs.ashbyhq.com/tinybird
-#     scan_method: websearch
-#     scan_query: 'site:tinybird.co/careers OR site:jobs.ashbyhq.com/tinybird'
-#     notes: 'Remote. Real-time data platform.'
-#     enabled: true
-
-#   - name: Clarity AI
-#     careers_url: https://jobs.lever.co/clarity-ai
-#     scan_method: websearch
-#     scan_query: 'site:clarity.ai/careers OR site:jobs.lever.co/clarity-ai'
-#     notes: 'Madrid/Remote. Sustainability analytics with AI.'
-#     enabled: true
-
-#   - name: Travelperk
-#     careers_url: https://jobs.ashbyhq.com/travelperk
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/travelperk'
-#     notes: 'Barcelona. Business travel unicorn.'
-#     enabled: true
-
-#   # -- DACH & European AI ecosystem --
-#   # All entries below have been verified against the Greenhouse / Ashby /
-#   # Lever / Workable APIs or live job boards. Greenhouse boards expose a
-#   # JSON API at https://boards-api.greenhouse.io/v1/boards/{slug}/jobs which
-#   # the scanner can hit directly via the api: field.
-
-#   # -- DACH AI labs & frontier model providers --
-
-#   - name: Aleph Alpha
-#     careers_url: https://jobs.ashbyhq.com/AlephAlpha
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/AlephAlpha'
-#     notes: 'Heidelberg DE. Sovereign European LLM provider, enterprise & government focus.'
-#     enabled: true
-
-#   - name: DeepL
-#     careers_url: https://jobs.ashbyhq.com/DeepL
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/DeepL'
-#     notes: 'Cologne DE. Translation & language AI. 60+ open roles, EU/DACH heavy.'
-#     enabled: true
-
-#   - name: Black Forest Labs
-#     careers_url: https://job-boards.greenhouse.io/blackforestlabs
-#     api: https://boards-api.greenhouse.io/v1/boards/blackforestlabs/jobs
-#     notes: 'Freiburg DE / SF. FLUX image models, ex-Stable Diffusion team.'
-#     enabled: true
-
-#   - name: Helsing
-#     careers_url: https://job-boards.greenhouse.io/helsing
-#     api: https://boards-api.greenhouse.io/v1/boards/helsing/jobs
-#     notes: 'Munich / Berlin / London / Paris. Defence AI unicorn. 100+ roles, ML & FDE.'
-#     enabled: true
-
-#   # -- DACH enterprise & SaaS (AI-heavy) --
-
-#   - name: Celonis
-#     careers_url: https://job-boards.greenhouse.io/celonis
-#     api: https://boards-api.greenhouse.io/v1/boards/celonis/jobs
-#     notes: 'Munich / NYC. Process intelligence, Applied AI Engineer roles, Field CTOs.'
-#     enabled: true
-
-#   - name: Contentful
-#     careers_url: https://job-boards.greenhouse.io/contentful
-#     api: https://boards-api.greenhouse.io/v1/boards/contentful/jobs
-#     notes: 'Berlin / Denver. Headless CMS, AI content workflows.'
-#     enabled: true
-
-#   - name: GetYourGuide
-#     careers_url: https://job-boards.greenhouse.io/getyourguide
-#     api: https://boards-api.greenhouse.io/v1/boards/getyourguide/jobs
-#     notes: 'Berlin. Travel marketplace, ML & data platform roles.'
-#     enabled: true
-
-#   - name: HelloFresh
-#     careers_url: https://job-boards.greenhouse.io/hellofresh
-#     api: https://boards-api.greenhouse.io/v1/boards/hellofresh/jobs
-#     notes: 'Berlin. Meal kit unicorn, large data/ML org.'
-#     enabled: true
-
-#   # -- DACH fintech --
-
-#   - name: N26
-#     careers_url: https://job-boards.greenhouse.io/n26
-#     api: https://boards-api.greenhouse.io/v1/boards/n26/jobs
-#     notes: 'Berlin / Barcelona. Mobile bank, ~50 roles, ML & risk.'
-#     enabled: true
-
-#   - name: Trade Republic
-#     careers_url: https://job-boards.greenhouse.io/traderepublicbank
-#     api: https://boards-api.greenhouse.io/v1/boards/traderepublicbank/jobs
-#     notes: 'Berlin / London / Paris. Neobroker, ~50 roles, platform & data.'
-#     enabled: true
-
-#   - name: SumUp
-#     careers_url: https://job-boards.greenhouse.io/sumup
-#     api: https://boards-api.greenhouse.io/v1/boards/sumup/jobs
-#     notes: 'Berlin / London. Payments fintech, EU + LATAM hiring.'
-#     enabled: true
-
-#   - name: Qonto
-#     careers_url: https://jobs.lever.co/qonto
-#     notes: 'Paris / Berlin / Barcelona / Milan. SMB neobank, MLOps for AI Product roles.'
-#     enabled: true
-
-#   # -- DACH logistics / mobility --
-
-#   - name: Forto
-#     careers_url: https://jobs.lever.co/forto
-#     notes: 'Berlin DE. Digital freight forwarder, product & data roles, German + English.'
-#     enabled: true
-
-#   # -- Switzerland / Austria AI --
-
-#   - name: Lakera
-#     careers_url: https://jobs.ashbyhq.com/lakera.ai
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/lakera.ai'
-#     notes: 'Zurich CH / SF. AI security & guardrails. Has Forward Deployed Engineer roles.'
-#     enabled: true
-
-#   - name: Scandit
-#     careers_url: https://job-boards.greenhouse.io/scandit
-#     api: https://boards-api.greenhouse.io/v1/boards/scandit/jobs
-#     notes: 'Zurich CH. Computer vision / smart data capture, ML roles.'
-#     enabled: true
-
-#   - name: Cradle
-#     careers_url: https://jobs.ashbyhq.com/cradlebio
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/cradlebio'
-#     notes: 'Zurich CH / Amsterdam. AI-guided protein design, ML researcher roles.'
-#     enabled: true
-
-#   # -- France AI ecosystem --
-
-#   - name: Hugging Face
-#     careers_url: https://apply.workable.com/huggingface/
-#     scan_method: websearch
-#     scan_query: 'site:apply.workable.com/huggingface'
-#     notes: 'Paris / NYC / Remote. ML hub & open-source models.'
-#     enabled: true
-
-#   - name: Photoroom
-#     careers_url: https://jobs.ashbyhq.com/photoroom
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/photoroom'
-#     notes: 'Paris FR. AI photo editor, Head of CV / Head of ML roles.'
-#     enabled: true
-
-#   - name: Pigment
-#     careers_url: https://jobs.lever.co/pigment
-#     notes: 'Paris FR / NYC / London. AI-powered FP&A planning platform.'
-#     enabled: true
-
-#   # -- UK & Ireland AI (EU-friendly hiring) --
-
-#   - name: Wayve
-#     careers_url: https://job-boards.greenhouse.io/wayve
-#     api: https://boards-api.greenhouse.io/v1/boards/wayve/jobs
-#     notes: 'London UK. Embodied AI for self-driving, ML & robotics roles.'
-#     enabled: true
-
-#   - name: Isomorphic Labs
-#     careers_url: https://job-boards.greenhouse.io/isomorphiclabs
-#     api: https://boards-api.greenhouse.io/v1/boards/isomorphiclabs/jobs
-#     notes: 'London / Lausanne / Cambridge MA. DeepMind spin-out for drug discovery AI.'
-#     enabled: true
-
-#   - name: PhysicsX
-#     careers_url: https://job-boards.greenhouse.io/physicsx
-#     api: https://boards-api.greenhouse.io/v1/boards/physicsx/jobs
-#     notes: 'London UK. Physics-informed ML for engineering, ~40 roles.'
-#     enabled: true
-
-#   - name: Stability AI
-#     careers_url: https://job-boards.greenhouse.io/stabilityai
-#     api: https://boards-api.greenhouse.io/v1/boards/stabilityai/jobs
-#     notes: 'London / SF. Generative AI image/video research lab.'
-#     enabled: true
-
-#   - name: Synthesia
-#     careers_url: https://jobs.ashbyhq.com/synthesia
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/synthesia OR site:job-boards.greenhouse.io/synthesia'
-#     notes: 'London UK. AI video generation for enterprise, $4B valuation.'
-#     enabled: true
-
-#   - name: Faculty
-#     careers_url: https://jobs.ashbyhq.com/faculty
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/faculty'
-#     notes: 'London UK. Applied AI consultancy. 80+ roles, AI Safety / MLE / Delivery.'
-#     enabled: true
-
-#   - name: Causaly
-#     careers_url: https://jobs.ashbyhq.com/causaly
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/causaly'
-#     notes: 'London / Athens. Biomedical knowledge graph + AI.'
-#     enabled: true
-
-#   # -- Nordics AI --
-
-#   - name: Lovable
-#     careers_url: https://jobs.ashbyhq.com/lovable
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/lovable'
-#     notes: 'Stockholm SE. AI app builder (text-to-app), 80+ open roles.'
-#     enabled: true
-
-#   - name: Legora
-#     careers_url: https://jobs.ashbyhq.com/legora
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/legora'
-#     notes: 'Stockholm SE / NYC / London. AI-native legal workspace.'
-#     enabled: true
-
-#   - name: Spotify
-#     careers_url: https://jobs.lever.co/spotify
-#     notes: 'Stockholm SE / NYC / London. Audio platform, large ML/personalization org.'
-#     enabled: true
-
-#   - name: Vinted
-#     careers_url: https://jobs.lever.co/vinted
-#     notes: 'Vilnius LT / Berlin. C2C marketplace unicorn, data science & ML roles.'
-#     enabled: true
-
-#   # -- Denmark AI / tech --
-
-#   - name: Corti
-#     careers_url: https://jobs.ashbyhq.com/corti
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/corti'
-#     notes: 'Copenhagen DK. Medical AI (ambient clinical documentation), ML / NLP roles.'
-#     enabled: true
-
-#   - name: Pleo
-#     careers_url: https://jobs.ashbyhq.com/pleo
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/pleo'
-#     notes: 'Copenhagen DK. Spend-management fintech, ML / data / platform roles.'
-#     enabled: true
-
-#   - name: Templafy
-#     careers_url: https://job-boards.greenhouse.io/templafy
-#     api: https://boards-api.greenhouse.io/v1/boards/templafy/jobs
-#     notes: 'Copenhagen DK. Document-generation / content-enablement platform.'
-#     enabled: true
-
-#   # -- Iberia AI --
-
-#   - name: Amplemarket
-#     careers_url: https://job-boards.greenhouse.io/amplemarket
-#     api: https://boards-api.greenhouse.io/v1/boards/amplemarket/jobs
-#     notes: 'Lisbon PT / Remote. AI-native sales platform.'
-#     enabled: true
-
-#   # -- AI / Developer Tools --
-
-#   - name: Perplexity
-#     careers_url: https://jobs.ashbyhq.com/perplexity
-#     scan_method: websearch
-#     scan_query: ‘site:jobs.ashbyhq.com/perplexity "AI" OR "Applied AI" OR "Forward Deployed" OR "Engineer"’
-#     notes: 'AI-native search and enterprise AI platform.'
-#     enabled: true
-
-#   - name: Clay Labs
-#     careers_url: https://jobs.ashbyhq.com/claylabs
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/claylabs "AI" OR "Developer Experience" OR "Growth" OR "Engineer"'
-#     notes: 'AI-native GTM and workflow automation platform.'
-#     enabled: true
-
-#   - name: Runway
-#     careers_url: https://job-boards.greenhouse.io/runwayml
-#     api: https://boards-api.greenhouse.io/v1/boards/runwayml/jobs
-#     notes: 'Generative AI video and creative tooling platform.'
-#     enabled: true
-
-#   - name: Hightouch
-#     careers_url: https://job-boards.greenhouse.io/hightouch
-#     api: https://boards-api.greenhouse.io/v1/boards/hightouch/jobs
-#     notes: 'Data activation platform with AI agents and solutions engineering roles.'
-#     enabled: true
-
-#   - name: WorkOS
-#     careers_url: https://jobs.ashbyhq.com/workos
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/workos "Solutions Engineer" OR "Developer Success" OR "Engineer"'
-#     notes: 'Developer tools and enterprise-ready auth/platform APIs.'
-#     enabled: true
-
-#   # -- Dev Tools / AI Infra (DevRel, SA, FDE focus) --
-
-#   - name: Supabase
-#     careers_url: https://jobs.ashbyhq.com/supabase
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/supabase'
-#     notes: 'Open-source Firebase alternative. Remote-first. Postgres + Auth + Storage. Strong DevRel/DX hiring.'
-#     enabled: true
-
-#   - name: Resend
-#     careers_url: https://jobs.ashbyhq.com/resend
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/resend'
-#     notes: 'Email API for developers. Remote-first. DX/DevRel focused.'
-#     enabled: true
-
-#   - name: Clerk
-#     careers_url: https://jobs.ashbyhq.com/clerk
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/clerk'
-#     notes: 'Auth & user management for developers. SE / TAM / PM roles.'
-#     enabled: true
-
-#   - name: Inngest
-#     careers_url: https://jobs.ashbyhq.com/inngest
-#     scan_method: websearch
-#     scan_query: 'site:jobs.ashbyhq.com/inngest'
-#     notes: 'Durable workflow engine for serverless. DX/DevRel/Engineering hiring.'
-#     enabled: true
-
-#   - name: PlanetScale
-#     careers_url: https://job-boards.greenhouse.io/planetscale
-#     api: https://boards-api.greenhouse.io/v1/boards/planetscale/jobs
-#     notes: 'Serverless MySQL platform. Customer Engineering, Engineering, Sales.'
-#     enabled: true
-
-#   - name: Zep AI
-#     careers_url: https://www.getzep.com/careers
-#     scan_method: websearch
-#     scan_query: '"Zep" "Forward Deployed" OR "Developer Relations" OR "Founding" site:workatastartup.com OR site:getzep.com'
-#     notes: 'Context engineering platform for AI agents. YC W24. Lead FDE + DevRel Lead roles. US-only currently.'
-#     enabled: true
-
-#   - name: Maxim AI
-#     careers_url: https://www.getmaxim.ai/careers
-#     scan_method: websearch
-#     scan_query: '"Maxim AI" OR "getmaxim" careers "engineer" OR "product"'
-#     notes: 'AI evaluation and observability platform. Bangalore-based, mostly on-site.'
-#     enabled: true
-
-#   # ============================================================
-#   # -- Türkiye / Turkey market
-#   # ============================================================
-#   # Tech companies for candidates targeting the Turkish market or
-#   # Turkish-language postings. Job-portal search queries (Kariyer.net,
-#   # Yenibiris.com, Secretcv, İşin Olsun, LinkedIn-TR) live in the
-#   # `search_queries:` section above — that's where the scanner picks
-#   # them up.
-#   #
-#   # NOTE on scanning: Most Turkish companies below do NOT expose a
-#   # public ATS API (Greenhouse / Lever / Ashby) on their careers_url,
-#   # so `scan.mjs` will filter them out automatically (it requires a
-#   # detectable ATS). They are listed here as discovery aids — paste
-#   # the URL of any specific role into `data/pipeline.md` and run
-#   # `/career-ops pipeline`, which uses Playwright/WebFetch instead.
-#   # Only Getir (jobs.lever.co/getir) is currently scannable.
-#   #
-#   # Key Turkish market notes:
-#   #   - Salaries often quoted as NET (after tax/SGK deductions)
-#   #   - Common benefits: yemek kartı (meal card), özel sağlık sigortası
-#   #     (private health insurance), servis (company shuttle)
-#   #   - Probation (deneme süresi): max 2 months by law
-#   #   - Severance (kıdem tazminatı): 1 month per year of service
-#   #   - Use modes/tr/ for Turkish-language evaluations and applications
-#   # ============================================================
-
-#   - name: Trendyol
-#     careers_url: https://www.trendyol.com/kariyerimiz
-#     scan_method: websearch
-#     scan_query: 'site:trendyol.com/kariyerimiz OR "trendyol" "Software Engineer" OR "Backend" OR "Frontend" careers'
-#     notes: "Istanbul (Maslak tech HQ). Turkey's largest e-commerce platform (Alibaba-owned). Large tech org, competitive salaries."
-#     enabled: false
-
-#   - name: Hepsiburada
-#     careers_url: https://www.hepsiburada.com/kariyer
-#     scan_method: websearch
-#     scan_query: '"hepsiburada" careers "Software Engineer" OR "Backend" OR "Frontend" OR "Yazılım"'
-#     notes: 'Istanbul. Major Turkish e-commerce platform. Listed on NASDAQ.'
-#     enabled: false
-
-#   - name: Getir
-#     careers_url: https://jobs.lever.co/getir
-#     scan_method: websearch
-#     scan_query: 'site:jobs.lever.co/getir OR "getir" careers "Software Engineer" OR "Backend" OR "Frontend"'
-#     notes: 'Istanbul. Ultra-fast delivery unicorn. Exited international markets in April 2024; now Turkey-only.'
-#     enabled: false
-
-#   - name: Insider
-#     careers_url: https://useinsider.com/careers
-#     scan_method: websearch
-#     scan_query: '"useinsider" OR "insider" careers "Software Engineer" OR "Backend" OR "Frontend" site:jobs.lever.co OR site:jobs.ashbyhq.com'
-#     notes: 'Istanbul. B2B SaaS marketing platform. Unicorn. Strong remote-friendly culture.'
-#     enabled: false
-
-#   - name: Dream Games
-#     careers_url: https://www.dreamgames.com/careers
-#     scan_method: websearch
-#     scan_query: '"dreamgames" OR "dream games" careers "Software Engineer" OR "Backend" OR "Frontend"'
-#     notes: 'Istanbul. Mobile gaming company (Royal Match). Strong engineering culture, competitive pay.'
-#     enabled: false
-
-#   - name: Peak Games (Zynga)
-#     careers_url: https://www.peakgames.net/en/career
-#     scan_method: websearch
-#     scan_query: '"peak games" careers "Software Engineer" OR "Backend" OR "Frontend"'
-#     notes: 'Istanbul. Mobile gaming studio acquired by Zynga. Strong tech team.'
-#     enabled: false
-
-#   - name: Yemeksepeti (Delivery Hero)
-#     careers_url: https://www.yemeksepeti.com/kariyer
-#     scan_method: websearch
-#     scan_query: '"yemeksepeti" careers "Software Engineer" OR "Backend" OR "Frontend" OR "Yazılım"'
-#     notes: 'Istanbul. Food delivery platform (Delivery Hero subsidiary). Large tech team.'
-#     enabled: false
-
-#   - name: Sahibinden.com
-#     careers_url: https://www.sahibinden.com/kariyer
-#     scan_method: websearch
-#     scan_query: '"sahibinden" careers "Software Engineer" OR "Backend" OR "Frontend" OR "Yazılım Geliştirici"'
-#     notes: "Istanbul. Turkey's largest classifieds platform. Established tech org."
-#     enabled: false
-
-#   - name: Garanti BBVA Technology
-#     careers_url: https://www.garantibbvateknoloji.com.tr/kariyer
-#     scan_method: websearch
-#     scan_query: '"garanti bbva teknoloji" OR "garantibbvateknoloji" careers "Software Engineer" OR "Backend" OR "Frontend"'
-#     notes: 'Istanbul. Fintech/banking tech arm of Garanti BBVA. Large engineering org, competitive benefits.'
-#     enabled: false
-
-#   - name: Akbank Tech
-#     careers_url: https://www.akbank.com/tr-tr/sayfalar/kariyer.aspx
-#     scan_method: websearch
-#     scan_query: '"akbank" careers "Software Engineer" OR "Yazılım Mühendisi" OR "Backend" OR "Frontend"'
-#     notes: 'Istanbul. Turkish bank with large in-house tech team.'
-#     enabled: false
-
-#   - name: Turkcell
-#     careers_url: https://kariyer.turkcell.com.tr
-#     scan_method: websearch
-#     scan_query: 'site:kariyer.turkcell.com.tr OR "turkcell" careers "Software Engineer" OR "Backend" OR "Frontend"'
-#     notes: "Istanbul. Turkey's largest telecom. Large digital and tech transformation team."
-#     enabled: false
-
-#   - name: Iyzico (PayU)
-#     careers_url: https://iyzico.com/kariyer
-#     scan_method: websearch
-#     scan_query: '"iyzico" careers "Software Engineer" OR "Backend" OR "Frontend" OR "Yazılım"'
-#     notes: 'Istanbul. Fintech / payment infrastructure (PayU subsidiary). Good engineering culture.'
-#     enabled: false
-
-#   - name: Papara
-#     careers_url: https://papara.com/kariyer
-#     scan_method: websearch
-#     scan_query: '"papara" careers "Software Engineer" OR "Backend" OR "Frontend"'
-#     notes: 'Istanbul. Turkish fintech / digital wallet. Fast-growing, unicorn valuation.'
-#     enabled: false
-
-#   - name: Craftgate
-#     careers_url: https://craftgate.io/career
-#     scan_method: websearch
-#     scan_query: '"craftgate" careers "Software Engineer" OR "Backend" OR "Frontend"'
-#     notes: 'Istanbul. Payment orchestration platform. Strong engineering-first culture.'
-#     enabled: false
-
-#   - name: n11.com (Doğuş)
-#     careers_url: https://www.n11.com/kurumsal/kariyer
-#     scan_method: websearch
-#     scan_query: '"n11" careers "Software Engineer" OR "Backend" OR "Frontend" OR "Yazılım"'
-#     notes: 'Istanbul. E-commerce marketplace (Doğuş Group).'
-#     enabled: false
-
-# # ── Job Boards ────────────────────────────────────────────────────────
-# # Multi-employer aggregators. Unlike tracked_companies (one entry = one employer),
-# # job boards return offers from many companies in a single API call.
-# # Same title/location filtering and dedup apply.
-
-# job_boards:
-#   # ── SolidJobs (Polish market) ──────────────────────────────────────
-#   # Public API — no auth needed. Division in URL path, campaign=career-ops for tracking.
-#   # Available divisions: it, engineering, marketing, sales, hr, logistics, finances, other
-
-#   - name: SolidJobs IT
-#     careers_url: https://solid.jobs/public-api/offers/it?campaign=career-ops
-#     provider: solidjobs
-#     enabled: true
-#     notes: 'Polish IT job board — IT division'
-
-#   - name: SolidJobs Engineering
-#     careers_url: https://solid.jobs/public-api/offers/engineering?campaign=career-ops
-#     provider: solidjobs
-#     enabled: false
-#     notes: 'Polish job board — Engineering & Production division'
-
-#   - name: SolidJobs Marketing
-#     careers_url: https://solid.jobs/public-api/offers/marketing?campaign=career-ops
-#     provider: solidjobs
-#     enabled: false
-#     notes: 'Polish job board — Marketing division'
-
-#   - name: SolidJobs Sales
-#     careers_url: https://solid.jobs/public-api/offers/sales?campaign=career-ops
-#     provider: solidjobs
-#     enabled: false
-#     notes: 'Polish job board — Sales division'
-
-#   - name: SolidJobs HR
-#     careers_url: https://solid.jobs/public-api/offers/hr?campaign=career-ops
-#     provider: solidjobs
-#     enabled: false
-#     notes: 'Polish job board — HR division'
-
-#   - name: SolidJobs Logistics
-#     careers_url: https://solid.jobs/public-api/offers/logistics?campaign=career-ops
-#     provider: solidjobs
-#     enabled: false
-#     notes: 'Polish job board — Logistics division'
-
-#   - name: SolidJobs Finances
-#     careers_url: https://solid.jobs/public-api/offers/finances?campaign=career-ops
-#     provider: solidjobs
-#     enabled: false
-#     notes: 'Polish job board — Finances division'
-
-#   - name: SolidJobs Other
-#     careers_url: https://solid.jobs/public-api/offers/other?campaign=career-ops
-#     provider: solidjobs
-#     enabled: false
-#     notes: 'Polish job board — Other specialists division'
-
-#   # ── JustJoin.it / NoFluffJobs (Polish tech market) ────────────────────────
-#   # Public job-board APIs. Disabled by default; enable and rely on the global
-#   # title_filter/location_filter/salary_filter above for your target profile.
-
-#   - name: JustJoin.it
-#     careers_url: https://justjoin.it/job-offers/all-locations
-#     provider: justjoin
-#     enabled: false
-#     notes: 'Polish tech job board — newest public offers'
-
-#   - name: NoFluffJobs
-#     careers_url: https://nofluffjobs.com/pl
-#     provider: nofluffjobs
-#     enabled: false
-#     notes: 'Polish tech job board — newest public postings'
-
-#   # -- Indonesia job boards (provider: jobstreet / glints) --
-
-#   - name: Jobstreet Indonesia
-#     provider: jobstreet
-#     api: https://id.jobstreet.com/api/chalice-search/v4/search
-#     siteKey: ID-Main
-#     searchKeywords: 'data scientist'
-#     searchLocation: 'Jakarta'
-#     pageSize: 30
-#     maxPages: 3
-#     enabled: false
-#     notes: "Indonesia's largest job board (SEEK group). Public JSON search API — zero tokens."
-
-#   - name: Glints Indonesia
-#     provider: glints
-#     api: https://glints.com/api/graphql
-#     searchKeywords: 'data scientist'
-#     countryCode: ID
-#     pageSize: 30
-#     maxPages: 3
-#     enabled: false
-#     notes: 'SEA job platform covering ID/SG/MY/VN. Undocumented public GraphQL API — adjust graphqlQuery if schema changes.'
 
   # ══════════════════════════════════════════════════════════════
   # Beyond FAANG (India-relevant) — imported from user CSV
@@ -1878,342 +967,333 @@ tracked_companies:
   # Review periodically — some careers_url values are ATS-hosted
   # fallbacks rather than branded pages; ATS boards may reorganize URLs.
   # ══════════════════════════════════════════════════════════════
-  - name: 'NVIDIA Graphics'
-    careers_url: 'https://www.nvidia.com/en-in/about-nvidia/careers/'
-    notes: 'India, US, Europe'
+  - name: "NVIDIA Graphics"
+    careers_url: "https://www.nvidia.com/en-in/about-nvidia/careers/"
+    notes: "India, US, Europe"
     enabled: true
 
-  - name: 'Adyen'
-    careers_url: 'https://careers.adyen.com/vacancies'
-    notes: 'Amsterdam, Madrid, Chicago, Sidney, Sao Paulo, Mumbai Amsterdam, Madrid Amsterdam, Madrid, Chicago Amsterdam, Chicago, Madrid, New York, San'
+  - name: "Adyen"
+    careers_url: "https://careers.adyen.com/vacancies"
+    notes: "Amsterdam, Madrid, Chicago, Sidney, Sao Paulo, Mumbai Amsterdam, Madrid Amsterdam, Madrid, Chicago Amsterdam, Chicago, Madrid, New York, San"
     enabled: true
 
-  - name: 'DevOn'
-    careers_url: 'https://careers.devon.global/vacancies/'
-    notes: 'Delft (Netherlands, mostly remote), India (Bengaluru, Delhi)'
+  - name: "DevOn"
+    careers_url: "https://careers.devon.global/vacancies/?job__location_spec=bangalore-india"
+    notes: "Delft (Netherlands, mostly remote), India (Bengaluru, Delhi)"
     enabled: true
 
-  - name: 'Timescale'
-    careers_url: 'https://www.timescale.com/careers/'
-    notes: 'Remote (US, most of a europe, India)'
+  - name: "Timescale"
+    careers_url: "https://www.timescale.com/careers/"
+    notes: "Remote (US, most of a europe, India)"
     enabled: true
 
-  - name: 'Lummo'
-    careers_url: 'https://lummo.hire.trakstar.com/'
-    notes: 'Remote (south east asia) India (GMT+5:30), Indonesia (GMT+7)'
+  - name: "Elsevier"
+    careers_url: "https://relx.wd3.myworkdayjobs.com/en-US/ElsevierJobs?Country___Territory=c4f78be1a8f14da0ab49ce1162348a5e"
+    notes: "INDIA (and globally, including US but main tech hub is in Ams) Amsterdam, London, Philadelphia, Bangalore, Chennai"
     enabled: true
 
-  - name: 'Springboard'
-    careers_url: 'https://jobs.lever.co/springboard?department=Technology'
-    notes: 'India, IST'
+  - name: "Hasura"
+    careers_url: "https://jobs.gem.com/promptql"
+    notes: "US, India, Remote"
     enabled: true
 
-  - name: 'Redpanda'
-    careers_url: 'https://redpanda.com/careers'
-    notes: 'Everywhere. Where 100% remote. Most of the team is split between Americas and Europe but we have people in Japan, Philipines and India. Ever'
+  - name: "FamPay"
+    careers_url: "https://jobs.lever.co/fampay/"
+    notes: "India"
     enabled: true
 
-  - name: 'Elsevier'
-    careers_url: 'https://relx.wd3.myworkdayjobs.com/en-US/ElsevierJobs?jobFamilyGroup=8c5fc5940f0b01ba8d012114be0035b9&locations=8c5fc5940f0b011f44029399b200b119'
-    notes: 'Amsterdam (and globally, including US but main tech hub is in Ams) Amsterdam, London, Philadelphia, Bangalore, Chennai'
+  - name: "Clarisights"
+    careers_url: "https://careers.clarisights.com/"
+    notes: "Bangalore , India"
     enabled: true
 
-  - name: 'Booking.com'
-    careers_url: 'https://careers.booking.com/'
-    notes: 'Amsterdam, London, Manchester Amsterdam, London, Bangalore Amsterdam, Manchester, India, Romania Amsterdam, Bangalore, London, Manchester, T'
+  - name: "Cogitation Systems"
+    careers_url: "https://coditation.kekahire.com"
+    notes: "All over India"
     enabled: true
 
-  - name: 'Apollo.io'
-    careers_url: 'https://boards.greenhouse.io/apolloio'
-    notes: 'Remote worldwide but heavy focus on USA, Canada, India and the Philippines Remote US, India and Philippines'
+  - name: "ZF - SCALAR"
+    careers_url: "https://jobs.zf.com/search/?createNewAlert=false&q=Commercial+Vehicle+Solutions&optionsFacetsDD_facility=Research+and+Development&optionsFacetsDD_shifttype=&optionsFacetsDD_country=&locationsearch="
+    notes: "Dublin, Bruxelles, Ieper, Lausanne (Switzerland), France, Germany, Poland, India"
     enabled: true
 
-  - name: 'Hasura'
-    careers_url: 'https://hasura.io/careers/#hasura-open-roles'
-    notes: 'US, India, Remote'
+  - name: "GrayQuest"
+    careers_url: "https://www.grayquest.com/contact"
+    notes: "Mumbai, India"
     enabled: true
 
-  - name: 'FamPay'
-    careers_url: 'https://jobs.lever.co/fampay/'
-    notes: 'India'
+  - name: "Gameberry Labs"
+    careers_url: "https://gameberrylabs.com/jobs"
+    notes: "Bangalore"
     enabled: true
 
-  - name: 'Clarisights'
-    careers_url: 'https://careers.clarisights.com/'
-    notes: 'Bangalore , India'
+  - name: "Ping Identity"
+    careers_url: "https://jobs.jobvite.com/pingidentitycareers/jobs"
+    notes: "US, India"
     enabled: true
 
-  - name: 'OLX group'
-    careers_url: 'https://hire.eu.lever.co/jobs/internal?commitment=Full-time'
-    notes: 'Barcelona, Bulgaria, India, Berlín, USA'
+  - name: "Toast"
+    careers_url: "https://careers.toasttab.com"
+    notes: "US, India, Ireland, Canada"
     enabled: true
 
-  - name: 'Cogitation Systems'
-    careers_url: 'https://coditation.kekahire.com'
-    notes: 'All over India'
+  - name: "Groww"
+    careers_url: "https://job-boards.eu.greenhouse.io/groww?offices%5B%5D=4016222101"
+    notes: "Bengaluru, India"
     enabled: true
 
-  - name: 'ZF - SCALAR'
-    careers_url: 'https://jobs.zf.com/search/?createNewAlert=false&q=Commercial+Vehicle+Solutions&optionsFacetsDD_facility=Research+and+Development&optionsFacetsDD_shifttype=&optionsFacetsDD_country=&locationsearch='
-    notes: 'Dublin, Bruxelles, Ieper, Lausanne (Switzerland), France, Germany, Poland, India'
+  - name: "Rippling"
+    careers_url: "https://www.rippling.com/careers/open-roles?department=Engineering&location=Bangalore%2C%20India"
+    notes: "India, San Francisco"
     enabled: true
 
-  - name: 'GrayQuest'
-    careers_url: 'https://www.grayquest.com/contact'
-    notes: 'Mumbai, India'
+  - name: "Akamai Technologies"
+    careers_url: "https://www.rippling.com/careers/open-roles?department=Engineering&location=Bangalore%2C%20India"
+    notes: "US(Remote), India"
     enabled: true
 
-  - name: 'Gameberry Labs'
-    careers_url: 'https://gameberrylabs.com/jobs'
-    notes: 'Bangalore'
+  #  DONE ABOVE
+  - name: "Energy Exemplar"
+    careers_url: "https://www.energyexemplar.com/careers/"
+    notes: "Pune, Bangalore, Salt Lake City, Adelaide"
     enabled: true
 
-  - name: 'Ping Identity'
-    careers_url: 'https://jobs.jobvite.com/pingidentitycareers/jobs'
-    notes: 'US, India'
+  - name: "Deliveroo"
+    careers_url: "https://boards.greenhouse.io/deliveroo"
+    notes: "United Kingdom, London or remote & India, remote"
     enabled: true
 
-  - name: 'Toast'
-    careers_url: 'https://careers.toasttab.com'
-    notes: 'US, India, Ireland, Canada'
+  - name: "Fazz"
+    careers_url: "https://jobs.lever.co/fazzfinancial?department=Technology"
+    notes: "Indonesia, Malaysia, Singapore, Vietnam, Taiwan, India"
     enabled: true
 
-  - name: 'Groww'
-    careers_url: 'https://groww.in/careers'
-    notes: 'Bengaluru, India'
+  - name: "Simpplr"
+    careers_url: "https://www.simpplr.com/about/careers/"
+    notes: "Toronto (Canada), Brighton (UK), Bengaluru/Gurugram (India)"
     enabled: true
 
-  - name: 'Walmart Global Tech'
-    careers_url: 'https://tech.walmart.com/'
-    notes: 'Seattle, Sunnyvale, Reston, Atlanta, NYC Metro, Dallas India, US'
+  - name: "Toplyne"
+    careers_url: "https://www.toplyne.io/join-us"
+    notes: "Bangalore, India"
     enabled: true
 
-  - name: 'Adform'
-    careers_url: 'http://join.adform.com/'
-    notes: 'Lithuania, Poland, India'
+  - name: "Shell Recharge (Solutions)"
+    careers_url: "https://shellrecharge.com/en-gb/solutions/company/careers"
+    notes: "US, Europe, India, Singapore"
     enabled: true
 
-  - name: 'ChargePoint'
-    careers_url: 'https://www.chargepoint.com/about/opportunities'
-    notes: 'Campbell, CA (San Jose Area), Amsterdam, Europe, India'
+  - name: "Gentrack"
+    careers_url: "https://gentrack.com/careers/#roles"
+    notes: "Remote - India, UK, Australia or New Zealand"
     enabled: true
 
-  - name: 'Rippling'
-    careers_url: 'https://www.rippling.com/careers'
-    notes: 'India, San Francisco'
+  - name: "MoEngage"
+    careers_url: "https://moengage.darwinbox.in/ms/candidate/careers"
+    notes: "Bengaluru (India) , Jakarta (Indonesia), Ho Chi Minh City (Vietnam)"
     enabled: true
 
-  - name: 'Akamai Technologies'
-    careers_url: 'https://akamaicareers.inflightcloud.com/'
-    notes: 'US(Remote), India'
+  - name: "Emis Group"
+    careers_url: "https://emis.current-vacancies.com/Website/Search?txtKeyword=Emis"
+    notes: "UK, London, Leeds, Chennai"
     enabled: true
 
-  - name: 'Energy Exemplar'
-    careers_url: 'https://www.energyexemplar.com/careers/'
-    notes: 'Pune, Bangalore, Salt Lake City, Adelaide'
+  - name: "R3"
+    careers_url: "https://www.r3.com/careers/#job-openings"
+    notes: "London, Dublin, Sofia, Mumbai"
     enabled: true
 
-  - name: 'Deliveroo'
-    careers_url: 'https://boards.greenhouse.io/deliveroo'
-    notes: 'United Kingdom, London or remote & India, remote'
+  - name: "Couchbase"
+    careers_url: "https://www.couchbase.com/careers/open-positions"
+    notes: "US, UK, Canada, India"
     enabled: true
 
-  - name: 'Fazz'
-    careers_url: 'https://jobs.lever.co/fazzfinancial?department=Technology'
-    notes: 'Indonesia, Malaysia, Singapore, Vietnam, Taiwan, India'
+  - name: "IMC Trading"
+    careers_url: "https://careers.imc.com/eu/en"
+    notes: "Amsterdam, Chicago, Sydney, and Mumbai Chicago, Amsterdam, Sydney, Mumbai"
     enabled: true
 
-  - name: 'Simpplr'
-    careers_url: 'https://www.simpplr.com/about/careers/'
-    notes: 'Toronto (Canada), Brighton (UK), Bengaluru/Gurugram (India)'
+  - name: "Leaseweb"
+    careers_url: "https://www.leaseweb.com/career/departments/product-engineering"
+    notes: "Amsterdam, Lisbon, Bangalore, Montreal"
     enabled: true
 
-  - name: 'Toplyne'
-    careers_url: 'https://www.toplyne.io/join-us'
-    notes: 'Bangalore, India'
+  - name: "Scribble Data Inc"
+    careers_url: "https://www.scribbledata.io/careers/"
+    notes: "Toronto, Bangalore, Remote"
     enabled: true
 
-  - name: 'Shell Recharge (Solutions)'
-    careers_url: 'https://shellrecharge.com/en-gb/solutions/company/careers'
-    notes: 'US, Europe, India, Singapore'
+  - name: "Pepsico"
+    careers_url: "https://www.pepsicojobs.com/main/"
+    notes: "Europe, USA, india"
     enabled: true
 
-  - name: 'Gentrack'
-    careers_url: 'https://gentrack.com/careers/#roles'
-    notes: 'Remote - India, UK, Australia or New Zealand'
+  - name: "Builder.ai"
+    careers_url: "https://www.builder.ai/careers"
+    notes: "London, Delhi"
     enabled: true
 
-  - name: 'MoEngage'
-    careers_url: 'https://moengage.darwinbox.in/ms/candidate/careers'
-    notes: 'Bengaluru (India) , Jakarta (Indonesia), Ho Chi Minh City (Vietnam)'
+  - name: "Disney+ Hotstar"
+    careers_url: "https://jobs.lever.co/hotstar"
+    notes: "India, China, Remote"
     enabled: true
 
-  - name: 'Emis Group'
-    careers_url: 'https://emis.current-vacancies.com/Website/Search?txtKeyword=Emis'
-    notes: 'UK, London, Leeds, Chennai'
+  - name: "HackerRank"
+    careers_url: "https://www.hackerrank.com/careers"
+    notes: "Remote within India"
     enabled: true
 
-  - name: 'R3'
-    careers_url: 'https://www.r3.com/careers/#job-openings'
-    notes: 'London, Dublin, Sofia, Mumbai'
+  - name: "MetaMap"
+    careers_url: "https://boards.greenhouse.io/metamap"
+    notes: "Bangalore, India"
     enabled: true
 
-  - name: 'Couchbase'
-    careers_url: 'https://www.couchbase.com/careers/open-positions'
-    notes: 'US, UK, Canada, India'
+  - name: "StreamSets"
+    careers_url: "https://jobs.lever.co/streamsets"
+    notes: "US, EMEA, Spain, India, Australia"
     enabled: true
 
-  - name: 'IMC Trading'
-    careers_url: 'https://careers.imc.com/eu/en'
-    notes: 'Amsterdam, Chicago, Sydney, and Mumbai Chicago, Amsterdam, Sydney, Mumbai'
+  - name: "New Relic"
+    careers_url: "https://newrelic.careers"
+    notes: "Most Europe, US, Remote USA-Remote, Spain-Remote, India-Remote and many more global locations"
     enabled: true
 
-  - name: 'Leaseweb'
-    careers_url: 'https://www.leaseweb.com/career/departments/product-engineering'
-    notes: 'Amsterdam, Lisbon, Bangalore, Montreal'
+  - name: "Continental AG"
+    careers_url: "https://www.continental-jobs.com/"
+    notes: "Germany, North America, Mexico, India, etc."
     enabled: true
 
-  - name: 'Scribble Data Inc'
-    careers_url: 'https://www.scribbledata.io/careers/'
-    notes: 'Toronto, Bangalore, Remote'
+  - name: "BlackBerry"
+    careers_url: "https://bb.wd3.myworkdayjobs.com/BlackBerry/jobs"
+    notes: "India, USA, Canada, Europe, Global"
     enabled: true
 
-  - name: 'Pepsico'
-    careers_url: 'https://www.pepsicojobs.com/main/'
-    notes: 'Europe, USA, india'
+  - name: "Intelex Technologies Inc"
+    careers_url: "https://boards.greenhouse.io/intelextechnologies/"
+    notes: "India, US, Canada"
     enabled: true
 
-  - name: 'Builder.ai'
-    careers_url: 'https://www.builder.ai/careers'
-    notes: 'London, Delhi'
+  - name: "Pulley"
+    careers_url: "https://pulley.com/careers"
+    notes: "Full remote across US, Canada, Brazil, India, and UK."
     enabled: true
 
-  - name: 'Disney+ Hotstar'
-    careers_url: 'https://jobs.lever.co/hotstar'
-    notes: 'India, China, Remote'
+  - name: "BlackLine"
+    careers_url: "https://careers.blackline.com/careers-home/"
+    notes: "United States (Remote), UK (Remote), Netherlands (Hybrid), India - Bangalore"
     enabled: true
 
-  - name: 'HackerRank'
-    careers_url: 'https://www.hackerrank.com/careers'
-    notes: 'Remote within India'
+  - name: "Coupa Software"
+    careers_url: "https://careers.coupa.com/global/en/c/engineering-jobs"
+    notes: "San Mateo, CA; San Diego, CA; Ann Arbor, Michigan; Seattle, Washington; Vancouver, BC; Karlsruhe, Germany; Ettenheim, Germany; Uppsala, Swed"
     enabled: true
 
-  - name: 'MetaMap'
-    careers_url: 'https://boards.greenhouse.io/metamap'
-    notes: 'Bangalore, India'
+  - name: "Hewlett-Packard Enterprise"
+    careers_url: "https://careers.hpe.com/us/en/search-results"
+    notes: "UK (Bristol), US, India"
     enabled: true
 
-  - name: 'StreamSets'
-    careers_url: 'https://jobs.lever.co/streamsets'
-    notes: 'US, EMEA, Spain, India, Australia'
+  - name: "Eventbrite"
+    careers_url: "https://www.eventbritecareers.com/jobs/search?page=1&query="
+    notes: "US, UK, Ireland, Spain, India, Argentina, Remote"
     enabled: true
 
-  - name: 'New Relic'
-    careers_url: 'https://newrelic.careers'
-    notes: 'Most Europe, US, Remote USA-Remote, Spain-Remote, India-Remote and many more global locations'
+  - name: "Goldman Sachs"
+    careers_url: "https://www.goldmansachs.com/careers/students/programs/india/engineers-campus-hiring-program.html"
+    notes: "India"
     enabled: true
 
-  - name: 'Continental AG'
-    careers_url: 'https://www.continental-jobs.com/'
-    notes: 'Germany, North America, Mexico, India, etc.'
+  - name: "HighLevel"
+    careers_url: "https://www.gohighlevel.com/careers"
+    notes: "Remote, India"
     enabled: true
 
-  - name: 'BlackBerry'
-    careers_url: 'https://bb.wd3.myworkdayjobs.com/BlackBerry/jobs'
-    notes: 'India, USA, Canada, Europe, Global'
+  - name: "AccelByte Inc."
+    careers_url: "https://accelbyte.io/careers/"
+    notes: "Indonesia, USA (Remote), Canada (Remote), India, Philippines, Europe Timezone/Europe"
     enabled: true
 
-  - name: 'Intelex Technologies Inc'
-    careers_url: 'https://boards.greenhouse.io/intelextechnologies/'
-    notes: 'India, US, Canada'
+  - name: "Tide"
+    careers_url: "https://boards.greenhouse.io/tide"
+    notes: "UK; India; Bulgaria; Romania"
     enabled: true
 
-  - name: 'Pulley'
-    careers_url: 'https://pulley.com/careers'
-    notes: 'Full remote across US, Canada, Brazil, India, and UK.'
+  - name: "Sita Aero"
+    careers_url: "https://sita.taleo.net/careersection/3/jobsearch.ftl?lang=en&portal=8205120319"
+    notes: "Multiple locations - Europe, Middle East, India, USA"
     enabled: true
 
-  - name: 'BlackLine'
-    careers_url: 'https://careers.blackline.com/careers-home/'
-    notes: 'United States (Remote), UK (Remote), Netherlands (Hybrid), India - Bangalore'
+  - name: "Bahwan Cybertek"
+    careers_url: "https://bahwan-cybertek-group.workable.com/backend"
+    notes: "Delhi, Bangalore, Chennai Chennai, Bangalore, WFH"
     enabled: true
 
-  - name: 'Coupa Software'
-    careers_url: 'https://careers.coupa.com/global/en/c/engineering-jobs'
-    notes: 'San Mateo, CA; San Diego, CA; Ann Arbor, Michigan; Seattle, Washington; Vancouver, BC; Karlsruhe, Germany; Ettenheim, Germany; Uppsala, Swed'
+  - name: "Medidata"
+    careers_url: "https://www.medidata.com/en/careers/job-search/"
+    notes: "United States (SF, NY, NJ & Remote), India (Pune), United Kingdom (Hammersmith), Japan (Tokyo), South Korea"
     enabled: true
 
-  - name: 'Hewlett-Packard Enterprise'
-    careers_url: 'https://careers.hpe.com/us/en/search-results'
-    notes: 'UK (Bristol), US, India'
+  - name: "Prodigy Finance"
+    careers_url: "https://prodigyfinance.bamboohr.com/jobs/"
+    notes: "(Remote) EMEA, India, South Africa"
     enabled: true
 
-  - name: 'Eventbrite'
-    careers_url: 'https://www.eventbritecareers.com/jobs/search?page=1&query='
-    notes: 'US, UK, Ireland, Spain, India, Argentina, Remote'
+  - name: "Productsup"
+    careers_url: "https://www.productsup.com/careers/open-roles/"
+    notes: "US, UK, Europe and India, or Remote."
     enabled: true
 
-  - name: 'Goldman Sachs'
-    careers_url: 'https://www.goldmansachs.com/careers/students/programs/india/engineers-campus-hiring-program.html'
-    notes: 'India'
+  - name: "NxtWave"
+    careers_url: "https://nxtwave.freshteam.com/jobs?location=[]&department=[%225000114928%22]&jobType=[]&title=&isRemoteLocation=false"
+    notes: "India, Hyderabad"
     enabled: true
 
-  - name: 'HighLevel'
-    careers_url: 'https://www.gohighlevel.com/careers'
-    notes: 'Remote, India'
+  - name: "Palo Alto Networks"
+    careers_url: "https://jobs.paloaltonetworks.com/en/jobs/"
+    notes: "North America, Tel Aviv, Bengaluru"
     enabled: true
 
-  - name: 'AccelByte Inc.'
-    careers_url: 'https://accelbyte.io/careers/'
-    notes: 'Indonesia, USA (Remote), Canada (Remote), India, Philippines, Europe Timezone/Europe'
+  - name: "Backbase"
+    careers_url: "https://www.backbase.com/careers"
+    notes: "Amsterdam, UK, Krakow, Hyderabad"
     enabled: true
 
-  - name: 'Tide'
-    careers_url: 'https://boards.greenhouse.io/tide'
-    notes: 'UK; India; Bulgaria; Romania'
+  - name: "Expeditors"
+    careers_url: "https://web.expeditors.com/careers/"
+    notes: "Seattle, Dublin, Ohio, San Diego, India, TX, NH etc."
     enabled: true
 
-  - name: 'Sita Aero'
-    careers_url: 'https://sita.taleo.net/careersection/3/jobsearch.ftl?lang=en&portal=8205120319'
-    notes: 'Multiple locations - Europe, Middle East, India, USA'
+  # -----
+  - name: "Lummo"
+    careers_url: "https://lummo.hire.trakstar.com/"
+    notes: "Remote (south east asia) India (GMT+5:30), Indonesia (GMT+7)"
     enabled: true
 
-  - name: 'Bahwan Cybertek'
-    careers_url: 'https://bahwan-cybertek-group.workable.com/backend'
-    notes: 'Delhi, Bangalore, Chennai Chennai, Bangalore, WFH'
+  - name: "Springboard"
+    careers_url: "https://jobs.lever.co/springboard?department=Technology"
+    notes: "India, IST"
     enabled: true
 
-  - name: 'Medidata'
-    careers_url: 'https://www.medidata.com/en/careers/job-search/'
-    notes: 'United States (SF, NY, NJ & Remote), India (Pune), United Kingdom (Hammersmith), Japan (Tokyo), South Korea'
+  - name: "Redpanda"
+    careers_url: "https://redpanda.com/careers"
+    notes: "Everywhere. Where 100% remote. Most of the team is split between Americas and Europe but we have people in Japan, Philipines and India. Ever"
     enabled: true
 
-  - name: 'Prodigy Finance'
-    careers_url: 'https://prodigyfinance.bamboohr.com/jobs/'
-    notes: '(Remote) EMEA, India, South Africa'
+  - name: "Booking.com"
+    careers_url: "https://careers.booking.com/"
+    notes: "Amsterdam, London, Manchester Amsterdam, London, Bangalore Amsterdam, Manchester, India, Romania Amsterdam, Bangalore, London, Manchester, T"
     enabled: true
 
-  - name: 'Productsup'
-    careers_url: 'https://www.productsup.com/careers/open-roles/'
-    notes: 'US, UK, Europe and India, or Remote.'
+  - name: "Apollo.io"
+    careers_url: "https://boards.greenhouse.io/apolloio"
+    notes: "Remote worldwide but heavy focus on USA, Canada, India and the Philippines Remote US, India and Philippines"
     enabled: true
-
-  - name: 'NxtWave'
-    careers_url: 'https://nxtwave.freshteam.com/jobs?location=[]&department=[%225000114928%22]&jobType=[]&title=&isRemoteLocation=false'
-    notes: 'India, Hyderabad'
-    enabled: true
-
-  - name: 'Palo Alto Networks'
-    careers_url: 'https://jobs.paloaltonetworks.com/en/jobs/'
-    notes: 'North America, Tel Aviv, Bengaluru'
-    enabled: true
-
-  - name: 'Backbase'
-    careers_url: 'https://www.backbase.com/careers'
-    notes: 'Amsterdam, UK, Krakow, Hyderabad'
+  - name: "OLX group"
+    careers_url: "https://hire.eu.lever.co/jobs/internal?commitment=Full-time"
+    notes: "Barcelona, Bulgaria, India, Berlín, USA"
     enabled: true
 
-  - name: 'Expeditors'
-    careers_url: 'https://web.expeditors.com/careers/'
-    notes: 'Seattle, Dublin, Ohio, San Diego, India, TX, NH etc.'
+  - name: "Walmart Global Tech"
+    careers_url: "https://tech.walmart.com/"
+    notes: "Seattle, Sunnyvale, Reston, Atlanta, NYC Metro, Dallas India, US"
     enabled: true
